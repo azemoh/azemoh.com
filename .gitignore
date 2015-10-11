@@ -2,6 +2,12 @@ node_modules
 
 # Sass
 .sass-cache
-*.css.map
+*.map
 
 *.thumb
+/assets/css/lib/bourbon/
+/_site/
+/CNAME
+
+*.ai
+*.psd

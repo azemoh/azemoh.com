@@ -1,0 +1,75 @@
+
+header#home {
+	color: #FFF;
+	position: relative;
+	background-color: $main-color;
+	background-position: right;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	@media #{$large-device} {
+		background-image: url(../img/bg-lg.jpg);
+	}
+	@media #{$pre-tablet} {
+		background-image: url(../img/bg-md.jpg);
+	}
+	@media #{$smart-phone} {
+		background-size: cover;
+		background-image: url(../img/bg-sm.jpg);
+	}
+	.home-overlay {
+		padding: 12em 0 12em;
+		@media #{$pre-tablet} {
+			padding: 9em 0 9em;
+		}
+		@media #{$smart-phone} {
+			padding: 8em 0 8em;
+		}
+	}
+	.az-intro {
+		width: 100%;
+		padding: 0 15px;
+		text-align: center;
+		h1 {
+			font-size: 4.8em;
+			font-weight: 700;
+			color: #FFF;
+			letter-spacing: -4px;
+			margin:0;
+			line-height: 1.2;
+			display: inline-block;
+			position: relative;
+			span {
+				position: absolute;
+				margin-top: -4px;
+				font-weight: 100;
+			}
+		}
+		h2 {
+			margin: 0 0 10px;
+			font-size: 2.5em;
+			font-weight: 300;
+			color: $accent-color;
+		}
+		p {
+			font-size: 1.2em;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		@media #{$pre-tablet} {
+			h1 { font-size: 3.8em; }
+			h2 { font-size: 1.65em; }
+			p { max-width: 500px; }
+		}
+		@media #{$smart-phone} {
+			h1 { font-size: 2.5em; letter-spacing: -2.5px; }
+			h2 { font-size: 1.1em; }
+			p { font-size: .8em; max-width: 360px; }
+		}
+	}
+	.godown {
+		position: absolute;
+		left: 50%;
+		margin-left: -25px;
+		bottom: 15px;
+	}
+}
