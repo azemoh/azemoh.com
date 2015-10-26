@@ -78,12 +78,15 @@ gulp.task('minify:html', function() {
     .pipe(gulp.dest(config.publicDir));
 });
 
-gulp.task('minify:js', function () {
+gulp.task('minify:js',  ['reload'], function () {
 	return gulp.src(config.jsDir + 'script.js')
 		.pipe(uglify('script.min.js', { outSourceMap: true }))
 		.pipe(gulp.dest(config.publicDir + config.jsDir))
-		.pipe(browserSync.reload({ stream: true	}))
 		.pipe(gulp.dest(config.jsDir));
+});
+
+gulp.task('reload', function () {
+	browserSync.reload();
 });
 
 /**
@@ -98,6 +101,7 @@ gulp.task('watch', function () {
 		'_layouts/*.html',
 		'_includes/**/*.html',
 		'_posts/*.md',
+		'assets/img/**/*',
 		'_config.yml'
 	], ['jekyll:rebuild']);
 	gulp.watch(config.publicDir + '**/*.html', ['minify:html']);

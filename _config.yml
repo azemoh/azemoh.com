@@ -1,4 +1,5 @@
 title: Joshua Azemoh
+brand: Azemoh
 tagline: Programmer · Developer · Dreamer
 markdown: redcarpet
 baseurl: ""
@@ -14,7 +15,10 @@ exclude: [
   node_modules,
   README.md,
   '**/*.map',
-  '**/*.scss'
+  '**/*.scss',
+  '**/*.ai',
+  '**/*.psd',
+	'**/npm-debug.log'
 ]
 
 excerpt_separator: <!--more-->
@@ -26,25 +30,23 @@ home_menu:
 - {name: "Home", url: "#home" }
 - {name: "About Me", url: "#about" }
 - {name: "Skills", url: "#skills" }
-- {name: "Work", url: "#work" }
+- {name: "Demo", url: "#work" }
 - {name: "Get In Touch", url: "#contact" }
 
 ## Social links
 socialLinks:
-- {name: "email", title: "Email", url: "mailto://buzzme46@gmail.com"}
+- {name: "github", title: "Github", url: "https://github.com/azemoh"}
 - {name: "linkedin", title: "Linkedin", url: "https://linkedin.com/in/azemoh"}
-- {name: "github", title: "Github", url: "http://github.com/azemoh"}
+- {name: "email", title: "Email", url: "mailto://buzzme46@gmail.com"}
 - {name: "google-plus", title: "Google+", url: "https://plus.google.com/u/0/+JoshuaAzemoh"}
-- {name: "about-me", title: "About.me", url: "http://about.me/azemoh"}
+## - {name: "about-me", title: "About.me", url: "http://about.me/azemoh"}
 - {name: "facebook", title: "Facebook", url: "https://facebook.com/azemoh"}
 
 ## Projects
 projects:
-- {title: "Socket.IO IM", thumbnail: "socket.jpg"}
-- {title: "Static Site Generator", thumbnail: "jade.jpg"}
-- {title: "Web App", thumbnail: "webapp.jpg"}
-- {title: "Hyper.js", thumbnail: "heyper.jpg"}
-- {title: "Study in Belarus", thumbnail: "belarus.jpg"}
-- {title: "Socket.IO IM", thumbnail: "socket.jpg"}
-- {title: "Web App", thumbnail: "webapp.jpg"}
-- {title: "Hyper.js", thumbnail: "hyper.jpg"}
+- {title: "Sunshine", thumbnail: "sunshine.jpg"}
+- {title: "Azemoh.com", thumbnail: "azemoh.jpg"}
+- {title: "Flickster", thumbnail: "flickster.jpg"}
+- {title: "Chicken Arcade", thumbnail: "chicken_arcade.jpg"}
+- {title: "XYZ School Network", thumbnail: "xyz.jpg"}
+- {title: "Jade-Sass Starter", thumbnail: "jade_sass.jpg"}

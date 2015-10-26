@@ -17,15 +17,21 @@ $(function () {
 		}
 	});
 
-	var $nav = $('#navigation'),
-		navChildren = $('.nav-links li').children(), // Get all li children
-		links = [];
+	var date  = new Date(),
+      $nav = $('nav.top-nav'),
+	    navChildren = $('.nav-links li').children(), // Get all li children
+	    links = [];
+	
+	/*--- Set Copyright year ---*/
+	$('.yr-now').html(date.getFullYear().toString());
 	
 	for (var i = 0; i < navChildren.length; i++) {
 		var link = navChildren[i],
 			href = $(link).attr('href');
 		links.push(href);
 	}
+	
+	
 	
 	$('a[href="#home"]').addClass("active");
 
@@ -107,4 +113,5 @@ $(function () {
 		});
 	});
 
+	
 });

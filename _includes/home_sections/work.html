@@ -1,21 +1,19 @@
-<section id="work">
+<section id="work" class="home-section">
 	<div class="wrapper">
-		<h3 class="section-title">Projects</h3>
-		<p class="section-intro"></p>
-	</div>
+		<h3 class="section-title">Demos</h3>
 	
-	<div class="col-1">
 		<div class="projects flex">
 		
 			{% for project in site.projects %}
 				<div class="fluid-box">
-					<div class="project">
+					<a href="" class="project">
 						<div class="img"></div>
 						<span>{{ project.title }}</span>
-					</div>
+					</a>
 				</div>
 			{% endfor %}
 			
-		</div>
+	</div>
+	
 	</div>
 </section>
