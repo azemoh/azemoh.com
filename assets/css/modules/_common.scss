@@ -1,0 +1,65 @@
+.hambuger {
+  height: 36px;
+  display: none;
+  padding: 9px;
+  float: right;
+  cursor: pointer;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-between;
+  span {
+    width: 25px;
+    display: block;
+    border-top: 3px solid $text-color;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  &:after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    bottom: -10px;
+    width: 100px;
+    display: block;
+    content: "";
+    height: 0px;
+    border: 1px solid $accent-color;
+  }
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.blinking-cursor {
+  font-style: normal;
+  color: inherit;
+  animation: 1s blink step-end infinite;
+}
+
+@include keyframes(blink) {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.in-shadow {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.075) inset;
+}
+
+.thumbnail {
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid #EEE;
+}
