@@ -30,7 +30,7 @@ body {
 
 .lead { font-size: 1.3rem; }
 small { font-size: 0.8em; }
-.tiny { font-size: 0.7em; }
+.tiny { font-size: 0.6em; }
 
 
 p {
@@ -105,7 +105,7 @@ a {
   color: $link-color;
   transition: all ease-in 0.2s;
   &:hover {
-    color: darken($link-color, 20%);
+    color: darken($link-color, 15%);
     text-decoration: underline;
   }
 }
@@ -126,7 +126,7 @@ textarea {
 textarea { resize: none; }
 
 hr {
-  margin-top: .5rem;
+  margin-top: .3rem;
   margin-bottom: 1.3rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1;

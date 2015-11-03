@@ -1,40 +1,33 @@
 #contact {
-	
-	background-color: #eee;
-	
-	.social {
-		width: 300px;
-		margin-left: $gutter;
-	}
-	
-	.contact-form {
-		
-		.field {
-			padding: .8em 1.1em;
-			background-color: #fff;
-		}
-		
-		.button {
-			padding: .8rem 1.1em .6rem;
-		}
-		
-		.flex-actions {
-			margin: 0 auto;
-			display: flex;
-			justify-content: center;
-			.button {
-				margin-left: 8px;
-				margin-right: 8px;
-			}
-			@media #{$smart-phone} {
-				width: 100%;
-				flex-direction: column;
-				.button {
-					width: 100%;
-					margin-left: 0;
-					margin-right: 0;
-				}
-			}
-		}
-	}
+  background-color: #eee;
+  .social {
+    width: 300px;
+    [class^="icon-"] {
+      margin-right: 10px;
+    }
+  }
+  .contact-form {
+    .field {
+      padding: .8em 1.1em;
+      background-color: #fff;
+    }
+    .button {
+      padding: .8rem 1.1em .6rem;
+    }
+    .flex-actions {
+      display: flex;
+      .button {
+        margin-right: $gutter;
+      }
+      @media #{$small-device} {
+        width: 100%;
+        flex-direction: column;
+        .button {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }

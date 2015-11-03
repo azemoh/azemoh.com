@@ -16,10 +16,10 @@
 
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  color: $accent-color;
   position: relative;
   font-weight: 400;
-  &:after {
+  &.after {
     position: absolute;
     left: 50%;
     transform: translateX(-50px);
@@ -67,5 +67,26 @@ hr {
     content: "";
     border-bottom: 2px solid $accent-color;
     width: 180px;
+  }
+}
+
+.seperator {
+  text-align: center;
+  margin-bottom: $gutter * 2.5;
+  color: #ddd;
+  &:before,
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    bottom: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  span {
+    @extend .icon-android;
+    font-size: 18px;
   }
 }
