@@ -1,38 +1,37 @@
-
 /* Fields
  * for use with inputs and textereas */
 
 .field {
-	width: 100%;
-	padding: .5rem .7rem;
-	margin-bottom: $gutter;
-	border-radius: 4px;
-	background: $bg-color;
-	color: $text-color;
-	border: 1px solid #DDD;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
-	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s;
-	&:focus {
-		border: 1px solid $accent-color;
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset,
-			0px 0px 5px rgba($accent-color, 0.6);
-	}
+  width: 100%;
+  padding: .5rem .7rem;
+  margin-bottom: $gutter;
+  border-radius: 4px;
+  background: $bg-color;
+  color: $text-color;
+  border: 1px solid #DDD;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s;
+  &:focus {
+    border: 1px solid $accent-color;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 5px rgba($accent-color, 0.6);
+  }
 }
 
 .button {
-	padding: .5rem .7rem .4rem;
-	font-weight: 700;
-	border-radius: .5rem;
-	min-width: 100px;
-	margin-bottom: $gutter;
-	border: 1px solid transparent;
-	color: #FFF;
-	background: $accent-color;
-	border-width: 0 0 .2rem;
-	border-color: $dark-accent;
-	&:hover, &:focus {
-		margin-top: .1rem;
-		border-bottom-width: .1rem;
-		text-decoration: none;
-	}
+  padding: .5rem .7rem .4rem;
+  font-weight: 700;
+  border-radius: .5rem;
+  min-width: 100px;
+  margin-bottom: $gutter;
+  border: 1px solid transparent;
+  color: #FFF;
+  background: $accent-color;
+  border-width: 0 0 .2rem;
+  border-color: $dark-accent;
+  &:hover,
+  &:focus {
+    margin-top: .1rem;
+    border-bottom-width: .1rem;
+    text-decoration: none;
+  }
 }

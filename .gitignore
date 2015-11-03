@@ -9,5 +9,5 @@ node_modules
 /CNAME
 
 *.psd
-**/npm-debug.log
-/assets/css/lib/bourbon/
+*.log
+/assets/css/lib/

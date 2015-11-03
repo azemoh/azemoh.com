@@ -1,26 +1,24 @@
-
 .footer {
-	padding: 30px 0 15px;
+  padding: 30px 0 20px;
 }
 
-
 .social-icons {
-	width: auto;
-	a {
-		color: #999;
-		@include size(30px);
-		text-align: center;
-		line-height: 30px;
-		border-radius: 3px;
-		display: inline-block;
-		text-decoration: none;
-		border: 1px solid transparent;
-		transition: all 0.3s cubic-bezier(.02,-1.45,1,2.51);
-		&:hover {
-			color: $link-color;
-			transform: scale(1.2);
-			border: 1px solid $link-color;
-			box-shadow: $link-color 0px 0px 1px;
-		}
-	}
+  width: auto;
+  a {
+    color: #999;
+    @include size(30px);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all 0.3s cubic-bezier(.02, -1.45, 1, 2.51);
+    &:hover {
+      color: $link-color;
+      transform: scale(1.1);
+      border: 1px solid $link-color;
+      box-shadow: $link-color 0px 0px 1px;
+    }
+  }
 }

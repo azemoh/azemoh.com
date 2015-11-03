@@ -1,19 +1,18 @@
 #about {
-	.profile {
-		justify-content: flex-start;
-		.avatar-lockup {
-			width: 180px;
-			margin-right: 30px;
-		}
-		@media #{$tablet} {
-			align-items: center;
-			flex-direction: column;
-			.avatar-lockup {
-				margin: 0 0 20px;
-			}
-			.blurb {
-				text-align: center;
-			}
-		}
-	}
+  .profile {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-start;
+    .avatar-lockup {
+      width: 180px;
+    }
+    @media #{$tablet} {
+      align-items: center;
+      flex-direction: column;
+      .blurb {
+        text-align: center;
+      }
+    }
+  }
 }

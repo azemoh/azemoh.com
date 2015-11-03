@@ -1,22 +1,22 @@
 <footer class="alt-bg footer">
-	<div class="wrapper">
-	
-		<div class="flex flex-between">
-			<p class="copy flex-grow">
-				<a href="/"><strong>Azemoh</strong></a>
-				<small>&copy; Joshua Azemoh All Rights Reserved.<span class="yr-now">2015</span></small>
-			</p>
+  <div class="wrapper">
 
-			<div class="social-icons">
-			{% for link in site.socialLinks %}
-				<a href="{{ link.url }}" target="_blank" title="{{ link.title }}">
-					<i class="icon-{{ link.name }}"></i>
-				</a>
-			{% endfor %}
-			</div>
-		</div>
-		
-		<small class="tiny">All trademarks, artworks, logos and associated imagery are trademarks of and/or copyright material of their respective owners. All rights reserved.</small>
-		
-	</div>
+    <div class="flex flex-between">
+      <p class="copy flex-grow">
+        <strong><a href="/">Azemoh</a></strong>
+        <small>&copy; Joshua Azemoh All Rights Reserved.<span class="yr-now">2015</span></small>
+      </p>
+
+      <div class="social-icons">
+        {% for link in site.socialLinks %}
+        <a href="{{ link.url }}" target="_blank" title="{{ link.title }}">
+          <i class="icon-{{ link.name }}"></i>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <p class="tiny">All trademarks, artworks, logos and associated imagery are trademarks of and/or copyright material of their respective owners. All rights reserved.</p>
+
+  </div>
 </footer>
