@@ -1,37 +1,39 @@
 <header id="home" class="alt-bg">
-	<nav class="top-nav">
-		<div class="wrapper">
-		
-			<a class="brand icon-azemoh"></a>
-			<a href="/">Azemoh</a>
-			
-			<label for="toggle" class="hambuger">
-				<span></span><span></span><span></span>
-			</label>
-			
-			<input id="toggle" type="checkbox">
-			
-			<ul class="nav-links pull-right">
-				{% for menu in site.home_menu %}
-					<li><a href="{{ menu.url }}">{{ menu.name }}</a></li>
-				{% endfor %}
-			</ul>
-			
-		</div>
-	</nav>
+  <nav class="top-nav">
+    <div class="wrapper">
 
-	<div class="home-overlay">
-		<div class="az-intro">
-			<h1 class="huge">{{ site.title }}<span class="blinking-cursor"> |</span></h1>
-			<h2 class="tagline">{{ site.tagline }}</h2>
-			<p class="lead">Software and full-stack-web developer.</p>
-		</div>
-	</div>
+    <a class="brand icon-azemoh" href="/">
+    </a>
+    <a href="/">Azemoh</a>
+    <span class="motor">{{ site.motor }}</span>
 
-	<a href="#about" class="go-to godown">
-		<span>{% for i in (1..5) %}
-			<span class="icon-angle-down"></span>
-		{% endfor %}</span>
-	</a>
+    <label for="toggle" class="hambuger">
+      <span></span><span></span><span></span>
+    </label>
+
+    <input id="toggle" type="checkbox">
+
+    <ul class="nav-links pull-right">
+      {% for menu in site.home_menu %}
+        <li><a href="{{ menu.url }}">{{ menu.name }}</a></li>
+      {% endfor %}
+    </ul>
+
+    </div>
+  </nav>
+
+  <div class="home-overlay">
+    <div class="az-intro">
+      <h1 class="huge">{{ site.title }}<span class="blinking-cursor"> |</span></h1>
+      <h2 class="tagline">{{ site.tagline }}</h2>
+      <p class="lead">Software and Full-stack Web developer.</p>
+    </div>
+  </div>
+
+  <a href="#about" class="go-to godown">
+    <span>{% for i in (1..5) %}
+      <span class="icon-angle-down"></span>
+    {% endfor %}</span>
+  </a>
 
 </header>
