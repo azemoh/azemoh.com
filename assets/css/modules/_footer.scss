@@ -13,7 +13,7 @@
     display: inline-block;
     text-decoration: none;
     border: 1px solid transparent;
-    transition: all 0.3s cubic-bezier(.02, -1.45, 1, 2.51);
+    transition: all 0.2s ease-in-out;
     &:hover {
       color: $link-color;
       transform: scale(1.1);
