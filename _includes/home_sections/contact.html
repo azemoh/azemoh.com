@@ -33,7 +33,11 @@
         <h4>Connect with me.</h4>
         <hr>
 
-        <p><a href="mailto://{{ site.email }}"><span class="icon-email"></span>{{ site.email }}</a></p>
+        <p class="flex social-links">
+        {% for link in site.socialLinks %}
+          <a href="{{ link.url }}" target="_blank"><i class="icon-{{ link.name }}"></i>{{ link.title }}</a>
+        {% endfor %}
+        </p>
       </div>
 
     </div>

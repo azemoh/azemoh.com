@@ -113,7 +113,7 @@ gulp.task('watch', function () {
 		'_includes/**/*.html',
 		'_posts/*.md',
 		'assets/img/**/*',
-		'_config.dev.yml'
+		'*.yml'
 	], ['jekyll:rebuild']);
 });
 

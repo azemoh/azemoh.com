@@ -2,8 +2,23 @@
   background-color: #f4f4f4;
   .social {
     width: 300px;
+
+    .social-links {
+      flex-direction: column;
+      a {
+        margin-bottom: $gutter / 1.5;
+      }
+    }
+
     [class^="icon-"] {
       margin-right: 10px;
+      background: #fff;
+      display: inline-block;
+      @include size(32px);
+      text-align: center;
+      line-height: 32px;
+      border-radius: 50%;
+      box-shadow: 0 0 5px #ddd;
     }
   }
   .contact-form {

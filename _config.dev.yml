@@ -42,8 +42,8 @@ home_menu:
 socialLinks:
 - {name: "github", title: "Github", url: "https://github.com/azemoh"}
 - {name: "linkedin", title: "Linkedin", url: "https://linkedin.com/in/azemoh"}
-- {name: "email", title: "Email", url: "mailto://buzzme46@gmail.com"}
 - {name: "google-plus", title: "Google+", url: "https://plus.google.com/u/0/+JoshuaAzemoh"}
+- {name: "email", title: "buzzme46@gmail.com", url: "mailto://buzzme46@gmail.com"}
 #- {name: "about-me", title: "About.me", url: "http://about.me/azemoh"}
 #- {name: "facebook", title: "Facebook", url: "https://facebook.com/azemoh"}
 
