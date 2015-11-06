@@ -8,6 +8,5 @@ node_modules
 /_site/
 /CNAME
 
-*.psd
 *.log
 /assets/css/lib/

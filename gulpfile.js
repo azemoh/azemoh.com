@@ -46,6 +46,7 @@ gulp.task('jekyll:rebuild', ['jekyll:devbuild'], function () {
   browserSync.reload();
 });
 
+
 /**
  * Wait for jekyll:devbuild, then launch the Server
  */
@@ -112,7 +113,7 @@ gulp.task('watch', function () {
 		'_includes/**/*.html',
 		'_posts/*.md',
 		'assets/img/**/*',
-		'_config.yml'
+		'_config.dev.yml'
 	], ['jekyll:rebuild']);
 });
 
