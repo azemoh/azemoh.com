@@ -8,14 +8,14 @@
       <div class="flex-col-tab flex-grow">
         <h4>Drop me a line!</h4>
         <hr>
-        <form action="" method="post" class="contact-form">
+        <form action="//formspree.io/{{ site.email }}" method="post" class="contact-form">
 
           <div class="flex">
             <div class="flex-col-1">
               <input type="text" name="name" placeholder="Name" required class="field">
             </div>
             <div class="flex-col-1">
-              <input type="email" name="email" placeholder="Email" required class="field">
+              <input type="email" name="_replyto" placeholder="Email" required class="field">
             </div>
           </div>
 
