@@ -78,6 +78,9 @@
   z-index: 1000;
   @include transition(background 0.5s);
   @include transition(border-bottom .5s);
+  @media #{$smart-phone} {
+    padding-top: 15px;
+  }
   &.no-pad {
     background: rgba(#FFF, 0.3);
     padding-top: 5px;
@@ -93,19 +96,6 @@
       &:hover {
         background-color: darken($accent-color, 15%);
       }
-    }
-  }
-
-  .motor {
-    font-size: 13px;
-    color: #ccc;
-    display: inline-block;
-    margin: 13px 0 0 120px;
-    padding-left: 10px;
-    border-left: 1px solid #ccc;
-    @media #{$tablet} {
-      margin-top: 8px;
-      margin-left: 107px;
     }
   }
 
@@ -160,18 +150,43 @@
   > div {
     position: relative;
   }
+
+  .motor {
+    font-size: 13px;
+    color: #ccc;
+    display: inline-block;
+    margin: 13px 0 0 120px;
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+    @media #{$tablet} {
+      margin-top: 8px;
+      margin-left: 107px;
+    }
+    @media #{$smart-phone} {
+      margin-left: 40px;
+    }
+  }
+
   .brand {
     @include position(absolute, 0 nill nill $gutter);
     display: inline-block;
     font-size: 7rem;
     line-height: 2.5rem;
-    cursor: pointer;
+    text-decoration: none;
     ~ a {
       display: none
     }
+
     @media #{$tablet} {
       font-size: 6rem;
       top: -5px;
+    }
+    @media #{$smart-phone} {
+      font-size: 2rem;
+      top: 0;
+      &:before {
+        content: "\e600";
+      }
     }
   }
   &.fixed {
