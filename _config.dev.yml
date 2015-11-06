@@ -1,0 +1,52 @@
+title: Joshua Azemoh
+brand: Azemoh
+email: buzzme46@gmail.com
+tagline: Programmer · Developer · Dreamer
+motor: Think · Learn · Create
+markdown: redcarpet
+baseurl: ""
+exclude: [
+  .git,
+  .gitignore,
+  CNAME,
+  assets/icomoon,
+  .sass-cache,
+  package.json,
+  gulpfile.js,
+  node_modules,
+  README.md,
+  '**/*.map',
+  '**/*.scss',
+  '**/*.ai',
+  '**/*.psd',
+	'**/*.log'
+]
+
+excerpt_separator: <!--more-->
+
+# Site Variables
+
+## Menu
+home_menu:
+- {name: "Home", url: "#home" }
+- {name: "About Me", url: "#about" }
+#- {name: "Skills", url: "#skills" }
+#- {name: "Demo", url: "#work" }
+- {name: "Get In Touch", url: "#contact" }
+
+## Social links
+socialLinks:
+- {name: "github", title: "Github", url: "https://github.com/azemoh"}
+- {name: "linkedin", title: "Linkedin", url: "https://linkedin.com/in/azemoh"}
+- {name: "email", title: "Email", url: "mailto://buzzme46@gmail.com"}
+- {name: "google-plus", title: "Google+", url: "https://plus.google.com/u/0/+JoshuaAzemoh"}
+#- {name: "about-me", title: "About.me", url: "http://about.me/azemoh"}
+#- {name: "facebook", title: "Facebook", url: "https://facebook.com/azemoh"}
+
+## Projects
+projects:
+- {title: "Sunshine", thumbnail: "sunshine.jpg"}
+- {title: "Azemoh.com", thumbnail: "azemoh.jpg"}
+- {title: "Flickster", thumbnail: "flickster.jpg"}
+- {title: "Chicken Arcade", thumbnail: "chicken_arcade.jpg"}
+- {title: "XYZ School Network", thumbnail: "xyz.jpg"}

@@ -17,9 +17,22 @@ var config = {
 
 /**
  * Build the Jekyll Site
+ * for development
+ */
+gulp.task('jekyll:devbuild', function (done) {
+  browserSync.notify(config.jekyllBuildMessage);
+  return cp.spawn('jekyll.bat', ['build', '--config', '_config.dev.yml'], {
+      stdio: 'inherit'
+    })
+    .on('close', done);
+});
+
+
+/**
+ * Build the Jekyll Site
+ * for production
  */
 gulp.task('jekyll:build', function (done) {
-  browserSync.notify(config.jekyllBuildMessage);
   return cp.spawn('jekyll.bat', ['build'], {
       stdio: 'inherit'
     })
@@ -29,14 +42,14 @@ gulp.task('jekyll:build', function (done) {
 /**
  * Rebuild Jekyll and reload page
  */
-gulp.task('jekyll:rebuild', ['jekyll:build'], function () {
+gulp.task('jekyll:rebuild', ['jekyll:devbuild'], function () {
   browserSync.reload();
 });
 
 /**
- * Wait for jekyll:build, then launch the Server
+ * Wait for jekyll:devbuild, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll:build', 'minify:js'], function () {
+gulp.task('browser-sync', ['sass', 'jekyll:devbuild', 'minify:js'], function () {
   browserSync({
     server: {
       baseDir: config.publicDir
@@ -45,10 +58,6 @@ gulp.task('browser-sync', ['sass', 'jekyll:build', 'minify:js'], function () {
   });
 });
 
-/**
- * Build site without starting server and watching for changes.
- */
-gulp.task('build', ['sass', 'jekyll:build', 'minify:js']);
 
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
@@ -106,6 +115,11 @@ gulp.task('watch', function () {
 		'_config.yml'
 	], ['jekyll:rebuild']);
 });
+
+/**
+ * Build site without starting server and watching for changes.
+ */
+gulp.task('build', ['sass', 'jekyll:build', 'minify:js']);
 
 /**
  * Default task, running just `gulp` will compile the sass,
