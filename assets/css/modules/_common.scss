@@ -92,3 +92,15 @@ hr {
     border: 1px solid #ddd;
   }
 }
+
+#form-feedback {
+  margin-bottom: $gutter;
+}
+
+.success {
+	color: limegreen;
+}
+
+.error {
+	color: red;
+}

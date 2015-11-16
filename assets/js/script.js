@@ -78,4 +78,35 @@ $(function () {
   });
 
 
+  // Contact form
+  var $feedback = $('#form-feedback'),
+    $contactForm = $('.contact-form');
+
+  $contactForm.on('keypress', function () {
+    $feedback.html('').removeClass('success').removeClass('error');
+  })
+  // Submit form to formspree
+  .on('submit', function (e) {
+
+    e.preventDefault();
+
+    $.ajax({
+      url: "//formspree.io/buzzme46@gmail.com",
+      method: "POST",
+      data: {
+        name: $('#name').val(),
+        _replyto: $('#_replyto').val(),
+        message: $('#message').val()
+      },
+      dataType: "json"
+    })
+    .done(function () {
+      $feedback.addClass('success').html('Message sent');
+      $contactForm[0].reset();
+    })
+    .fail(function () {
+      $feedback.addClass('error').html('Form submission failed');
+    });
+
+  })
 });
