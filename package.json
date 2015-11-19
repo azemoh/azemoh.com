@@ -7,9 +7,9 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "git-commit": "git add -A . && git commit -a -m 'site update'",
-    "git-push": "git push origin master --force",
-    "deploy": "npm run build && npm run git-commit && npm run git-push"
+    "git-commit": "git add -A . && git commit -m \"site update\"",
+    "git-push": "git push origin master",
+    "deploy": "npm run git-commit && npm run git-push"
   },
   "devDependencies": {
     "browser-sync": "^2.9.3",

@@ -1,4 +1,5 @@
-/*global $*/
+/*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 2, maxerr: 50 */
+/*global $, window, document */
 
 $(function () {
   'use strict';
