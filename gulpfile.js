@@ -68,9 +68,9 @@ gulp.task('sass', function () {
     .src(config.cssDir + '*.scss')
     .pipe(sass({
       includePaths: [config.cssDir],
-      outputStyle: 'compressed',
-      onError: browserSync.notify
+      outputStyle: 'compressed'
     }))
+    .on('error', sass.logError)
     .pipe(autoprefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
       cascade: true
     }))
