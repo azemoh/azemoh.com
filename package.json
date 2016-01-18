@@ -1,7 +1,7 @@
 {
   "name": "azemoh",
   "description": "Joshua Azemoh's personal website",
-  "version": "0.5.0",
+  "version": "1.2.2",
   "private": true,
   "main": "gulpfile.js",
   "scripts": {
