@@ -1,0 +1,213 @@
+.hero {
+  position: relative;
+  border-bottom: 1px solid #EEE;
+  background-attachment: fixed;
+  .hero-overlay {
+    padding: 8rem 0 8rem;
+    @media #{$smart-phone} {
+      padding: 7rem 0 7rem;
+    }
+  }
+  .hero-intro {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    h1 {
+      margin: 0;
+      display: inline-block;
+      position: relative;
+      font-weight: 700;
+      span {
+        position: absolute;
+        margin-top: -4px;
+        font-weight: 100;
+      }
+    }
+    h2 {
+      margin: 0;
+      font-weight: 300;
+      color: $accent-color;
+    }
+    p {
+      max-width: 600px;
+      margin: 10px auto 0;
+    }
+    @media #{$tablet} {
+      h1 {
+        font-size: 3.8em;
+      }
+      h2 {
+        font-size: 1.65em;
+      }
+      p {
+        max-width: 500px;
+      }
+  }
+  @media #{$smart-phone} {
+    h1 {
+      font-size: 2.5em;
+      letter-spacing: -2.5px;
+    }
+    h2 {
+      font-size: 1.1em;
+    }
+    p {
+      font-size: .8em;
+      max-width: 360px;
+    }
+  }
+  }
+  .godown {
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 15px;
+  }
+}
+
+.top-nav {
+  width: 100%;
+  min-height: 45px;
+  position: fixed;
+  padding: 35px 0 5px;
+  overflow: hidden;
+  z-index: 1000;
+  @include transition(background 0.5s);
+  @include transition(border-bottom .5s);
+  @media #{$smart-phone} {
+    padding-top: 15px;
+}
+&.no-pad {
+  background: rgba(#FFF, 0.3);
+  padding-top: 5px;
+  @include transition(padding-top .5s);
+}
+&.opaque {
+  background: rgba(#FFF, 0.95);
+  border-bottom: 1px solid #EEE;
+  ul li:last-of-type a {
+    border: none;
+    background-color: $accent-color;
+    color: #fff;
+    &:hover {
+      background-color: darken($accent-color, 15%);
+    }
+  }
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+  @include transition(max-height .5s);
+  li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    &:last-of-type a {
+      border: 2px solid $text-color;
+      border-radius: 4px;
+      padding: 9px 6px;
+      margin-left: 10px;
+      &:hover {
+        border-color: $accent-color;
+      }
+    }
+    a {
+      @extend %nav-link;
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 12px;
+      color: $text-color;
+      padding: 13px 10px;
+      &:hover,
+      &.active {
+        text-decoration: none;
+        color: $link-color;
+      }
+    }
+  }
+
+  @media #{$tablet} {
+    width: 100%;
+    max-height: 0;
+    text-align: right;
+    background: rgba(#FFF, .9);
+    li {
+      width: 100%;
+      a {
+        width: 100%;
+      }
+    }
+}
+}
+> div {
+  position: relative;
+}
+
+.motor {
+  font-size: 13px;
+  color: #ccc;
+  display: inline-block;
+  margin: 13px 0 0 120px;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+  @media #{$tablet} {
+    margin-top: 8px;
+    margin-left: 107px;
+}
+@media #{$smart-phone} {
+  margin-left: 40px;
+}
+}
+
+.brand {
+  @include position(absolute, 0 nill nill $gutter);
+  display: inline-block;
+  font-size: 7rem;
+  line-height: 2.5rem;
+  text-decoration: none;
+  ~ a {
+    display: none
+  }
+
+  @media #{$tablet} {
+    font-size: 6rem;
+    top: -5px;
+}
+@media #{$smart-phone} {
+  font-size: 2rem;
+  top: 0;
+  &:before {
+    content: "\e600";
+  }
+}
+}
+&.fixed {
+  @include position(fixed, 0 nill nill 0);
+}
+@media #{$tablet} {
+  .hambuger {
+    display: flex;
+  }
+}
+}
+
+// toggle responsive nav
+#toggle {
+  display: none;
+  &:checked + .nav-links {
+    max-height: 240px;
+    padding-top: 13px;
+    color: #666;
+    li:last-of-type a {
+      padding: 9px 6px;
+      background: $accent-color;
+      color: #fff;
+      margin-left: 0;
+      border: none;
+    }
+  }
+}
