@@ -4,7 +4,7 @@ email: buzzme46@gmail.com
 tagline: Programmer · Developer · Dreamer
 motor: Think · Learn · Create
 markdown: redcarpet
-baseurl: "azemoh.com"
+baseurl: ""
 exclude: [
   .git,
   .gitignore,
