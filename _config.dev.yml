@@ -1,6 +1,6 @@
 title: Joshua Azemoh
 brand: Azemoh
-email: buzzme46@gmail.com
+email: joshazemoh@gmail.com
 tagline: Programmer · Developer · Dreamer
 motor: Think · Learn · Create
 markdown: redcarpet
@@ -42,9 +42,9 @@ home_menu:
 socialLinks:
 - {name: "github", title: "Github", url: "https://github.com/azemoh"}
 - {name: "linkedin", title: "Linkedin", url: "https://linkedin.com/in/azemoh"}
+- {name: "twitter", title: "Twitter", url: "http://twitter.com/josh_azemoh"}
 - {name: "google-plus", title: "Google+", url: "https://plus.google.com/+JoshuaAzemoh"}
-- {name: "email", title: "buzzme46@gmail.com", url: "mailto://buzzme46@gmail.com"}
-#- {name: "about-me", title: "About.me", url: "http://about.me/azemoh"}
+- {name: "email", title: "buzzme46@gmail.com", url: "mailto://joshazemoh@gmail.com"}
 #- {name: "facebook", title: "Facebook", url: "https://facebook.com/azemoh"}
 
 ## Projects
