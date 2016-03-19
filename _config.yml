@@ -20,7 +20,7 @@ exclude: [
   '**/*.scss',
   '**/*.ai',
   '**/*.psd',
-	'**/*.log'
+  '**/*.log'
 ]
 
 # SEO
@@ -43,4 +43,4 @@ socialLinks:
 - {name: "linkedin", title: "Linkedin", url: "https://linkedin.com/in/azemoh"}
 - {name: "twitter", title: "Twitter", url: "http://twitter.com/josh_azemoh"}
 - {name: "google-plus", title: "Google+", url: "https://plus.google.com/+JoshuaAzemoh"}
-- {name: "email", title: "buzzme46@gmail.com", url: "mailto://joshazemoh@gmail.com"}
+- {name: "email", title: "joshazemoh@gmail.com", url: "mailto://joshazemoh@gmail.com"}
