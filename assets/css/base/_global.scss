@@ -2,7 +2,7 @@
 –––––––––––––––––––––––––––*/
 
 body {
-  font-family: 'Raleway', 'Segoe Ui', Calibri, sans-serif;
+  font-family: $site-font;
   color: $text-color;
   font-size: 100%;
   line-height: 1.5;
@@ -41,17 +41,23 @@ p {
 
 /* --- headings --- */
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6,
-.huge, b,
-strong {
+
+h1, h2, .huge { font-family: $huge-font; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.huge {
   color: #666;
   font-weight: 600;
   margin: 0;
+}
+
+strong, b {
+  font-weight: 600;
 }
 
 .huge {

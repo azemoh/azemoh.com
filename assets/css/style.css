@@ -182,12 +182,13 @@ th {
 /*	VARIABLES
 -----------------------------*/
 /*---- Colors---- */
+/*--- Typography ---*/
 /*---- Layout ----*/
 /*---- Break Points -----*/
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 body {
-  font-family: 'Raleway', 'Segoe Ui', Calibri, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: #888;
   font-size: 100%;
   line-height: 1.5;
@@ -224,17 +225,22 @@ p {
     margin-top: 10px; }
 
 /* --- headings --- */
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6,
-.huge, b,
-strong {
+h1, h2, .huge {
+  font-family: "Raleway", "Roboto", Arial, Helvetica, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.huge {
   color: #666;
   font-weight: 600;
   margin: 0; }
+
+strong, b {
+  font-weight: 600; }
 
 .huge {
   font-size: 4.8em;
