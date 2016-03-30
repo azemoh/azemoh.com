@@ -23,6 +23,9 @@ exclude: [
 	'**/*.log'
 ]
 
+paginate: 5
+paginate_path: "/writing/page:num/"
+
 # SEO
 author: Joshua Azemoh
 description: "Joshua Azemoh's personal website"
@@ -35,6 +38,7 @@ excerpt_separator: <!--more-->
 home_menu:
 - {name: "Home", url: "#home" }
 - {name: "About Me", url: "#about" }
+- {name: "Writing", url: "/writing"}
 - {name: "Get In Touch", url: "#contact" }
 
 ## Social links

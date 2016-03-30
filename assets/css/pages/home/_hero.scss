@@ -3,7 +3,7 @@
 
   .hero-overlay {
     padding: 11rem 0 11rem;
-    @media #{$smart-phone} {
+    @media #{$tablet} {
       padding: 8rem 0 8rem;
     }
   }

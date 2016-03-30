@@ -1,0 +1,55 @@
+---
+layout: default
+title: Writing | Joshua Azemoh
+---
+
+<div id="writing" class="hero">
+  <div class="hero-overlay">
+    <div class="hero-intro">
+      <h1 class="huge">Writing<span class="blinking-cursor"> |</span></h1>
+      <p class="lead">Technical blog for problems, discoveries and thrills i encounter during my adventures in programming</p>
+    </div>
+  </div>
+</div>
+
+<main class="wrapper">
+
+  <div class="">
+
+    {% for post in paginator.posts %}
+
+    <article class="article">
+
+      <div class="meta">
+        <time>{{ post.date | date_to_string }}</time>
+      </div>
+
+      <h2>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+
+      <div class="article-text">
+        {{ post.excerpt }}
+      </div>
+
+      <div class="read-more-wrap">
+        <a href="{{ post.url }}" class="read-more">Read More</a>
+      </div>
+
+    </article>
+
+    {% endfor %}
+
+  </div>
+
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" >Previous</a>
+    {% endif %}
+     <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}">Next</a>
+    {% endif %}
+  </div>
+
+</main>

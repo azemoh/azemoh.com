@@ -15,12 +15,15 @@ exclude: [
   gulpfile.js,
   node_modules,
   README.md,
-  '**/*.map',
   '**/*.scss',
   '**/*.ai',
   '**/*.psd',
 	'**/*.log'
 ]
+
+paginate: 5
+paginate_path: "/writing/page:num/"
+
 
 # SEO
 author: Joshua Azemoh
@@ -32,11 +35,11 @@ excerpt_separator: <!--more-->
 
 ## Menu
 home_menu:
-- {name: "Home", url: "#home" }
-- {name: "About Me", url: "#about" }
-#- {name: "Skills", url: "#skills" }
+- {name: "Home", url: "/#home" }
+- {name: "About Me", url: "/#about" }
+- {name: "Writing", url: "/writing"}
 #- {name: "Demo", url: "#work" }
-- {name: "Get In Touch", url: "#contact" }
+- {name: "Get In Touch", url: "/#contact" }
 
 ## Social links
 socialLinks:

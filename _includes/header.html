@@ -1,0 +1,22 @@
+<header class="alt-bg">
+  <nav class="top-nav">
+    <div class="wrapper">
+
+      <a class="icon-azemoh brand" href="/">
+      </a>
+      <a href="/">Azemoh</a>
+      <span class="motor">{{ site.motor }}</span>
+
+      <label for="toggle" class="hambuger">
+        <span></span><span></span><span></span>
+      </label>
+
+      <input id="toggle" type="checkbox">
+
+      <ul class="nav-links pull-right">
+        {% for menu in site.home_menu %}<li><a href="{{ menu.url }}">{{ menu.name }}</a></li>{% endfor %}
+      </ul>
+
+    </div>
+  </nav>
+</header>

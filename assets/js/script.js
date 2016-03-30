@@ -20,58 +20,54 @@ $(function () {
 
   var date = new Date(),
     $nav = $('nav.top-nav'),
-    navChildren = $('.nav-links li').children(), // Get all li children
-    links = [];
+    $navLinks = $('.nav-links li a'), // Get all li children
+    linksHref = [];
+
+
+  for (var i = 0; i < $navLinks.length; i++) {
+    var link = $navLinks[i],
+      href = $(link).attr('href');
+    if (href != '/writing') {
+      linksHref.push(href);
+    }
+  }
 
   /*--- Set Copyright year ---*/
   $('.yr-now').html(date.getFullYear().toString());
 
-  for (var i = 0; i < navChildren.length; i++) {
-    var link = navChildren[i],
-      href = $(link).attr('href');
-    links.push(href);
+  if ($('#home')) {
+    $('a[href*=#home]').addClass("active");
   }
-
-
-
-  $('a[href="#home"]').addClass("active");
 
   $(window).scroll(function () {
 
-    var scrollPos = $(window).scrollTop(),
-      showPosition = $('#about').offset().top, // Point to show got-to-top arrow
+    var scrollTop = $(window).scrollTop(),
       windowHeight = $(window).height();
 
+
     /*--- Sticky nav bar ---*/
-    if (scrollPos >= $('.brand').height()) {
+    if (scrollTop >= $('.brand').height()) {
       $nav.addClass("no-pad");
     } else {
       $nav.removeClass("no-pad");
     }
 
-    if (scrollPos >= ($('.az-intro').offset().top) - 90) {
+    if (scrollTop >= ($('.hero-intro').offset().top) - 90) {
       $nav.addClass("opaque");
     } else {
       $nav.removeClass("opaque");
     }
 
-    /*--- Show/hide go to top lonk ---*/
-    if (scrollPos >= showPosition) {
-      $('.az-go-top').css('display', 'block');
-    } else {
-      $('.az-go-top').css('display', 'none');
-    }
-
     /*---- Active nav element ----*/
-    for (var i = 0; i < links.length; i++) {
-      var href = links[i],
+    for (var i = 0; i < linksHref.length; i++) {
+      var href = linksHref[i].replace('/', ''),
         secPosition = $(href).offset().top - 200, // Offset of the section from the top
         secHeight = $(href).outerHeight(); // height of hte section
 
-      if (scrollPos >= secPosition && scrollPos < (secPosition + secHeight)) {
-        $('a[href="' + href + '"]').addClass("active");
+      if (scrollTop >= secPosition && scrollTop < (secPosition + secHeight)) {
+        $('a[href*=' + href + ']').addClass("active");
       } else {
-        $('a[href="' + href + '"]').removeClass("active");
+        $('a[href*=' + href + ']').removeClass("active");
       }
 
     }
@@ -101,12 +97,14 @@ $(function () {
       },
       dataType: "json"
     })
+
     .done(function () {
       $feedback.addClass('success').html('Message sent');
       $contactForm[0].reset();
     })
+
     .fail(function () {
-      $feedback.addClass('error').html('Form submission failed');
+      $feedback.addClass('error').html('Error sending message');
     });
 
   })

@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   border-bottom: 1px solid #EEE;
+  background: #F9FAFC;
   background-attachment: fixed;
   .hero-overlay {
     padding: 8rem 0 8rem;
@@ -8,6 +9,7 @@
       padding: 7rem 0 7rem;
     }
   }
+  
   .hero-intro {
     width: 100%;
     padding: 0 15px;
@@ -155,7 +157,6 @@
   padding-left: 10px;
   border-left: 1px solid #ccc;
   @media #{$tablet} {
-    margin-top: 8px;
     margin-left: 107px;
 }
 @media #{$smart-phone} {
@@ -175,7 +176,6 @@
 
   @media #{$tablet} {
     font-size: 6rem;
-    top: -5px;
 }
 @media #{$smart-phone} {
   font-size: 2rem;
