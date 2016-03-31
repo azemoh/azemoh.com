@@ -3,9 +3,7 @@
   padding-left: $gutter;
   margin-right: auto;
   margin-left: auto;
-  @media (min-width: 768px) { width: 750px; }
-  @media (min-width: 992px) { width: 960px; }
-  //	@media (min-width: 1200px) { width: 1170px;	}
+  max-width: 768px;
 }
 
 .clearfix {
@@ -27,7 +25,7 @@
 .pull-right { float: right !important; }
 .pull-left { float: left !important; }
 
-.section {
+.block-pad {
   padding: 50px 0;
 }
 
@@ -55,25 +53,25 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  &-grow {
+  &--grow {
     flex: 1;
   }
 
-  &-col-pho {
+  &--col_phone {
     @extend %flex-col;
     @media #{$smart-phone} {
       @include no-flex();
     }
   }
 
-  &-col-tab {
+  &--col_tab {
     @extend %flex-col;
     @media #{$tablet} {
       @include no-flex();
     }
   }
 
-  &-col-1 {
+  &--col-1 {
     flex: 1;
     margin-left: $gutter / 2;
     margin-right: $gutter / 2;
@@ -85,7 +83,7 @@
 
 }
 
-.fluid-box {
+.fluid--box {
   width: 33.3334%;
   @media #{$tablet} {
     width: 50%;

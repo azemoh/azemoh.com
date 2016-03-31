@@ -2,9 +2,10 @@
 -----------------------------*/
 /*---- Colors---- */
 $accent-color: #51C5FD;
+// $accent-color: #44BEC7;
 $dark-accent:  darken($accent-color, 20%);
 $link-color:	 $accent-color;
-$text-color:	 #888;
+$text-color:	 #666;
 $bg-color:		 #fafafa;
 $highlight-color: #FFF498;
 
@@ -18,6 +19,6 @@ $gutter: 16px;
 
 /*---- Break Points -----*/
 $large-device: "screen and (max-width : 992px)";
-$tablet: 			 "screen and (max-width : 768px)";
+$tablet: 			 "screen and (max-width : 700px)";
 $smart-phone:  "screen and (max-width : 480px)";
 $small-device: "screen and (max-width : 329px)";
