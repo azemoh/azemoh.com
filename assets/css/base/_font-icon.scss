@@ -1,115 +1,119 @@
 @font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?k7efhh');
-	src:url('fonts/icomoon.eot?k7efhh#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?k7efhh') format('truetype'),
-		url('fonts/icomoon.woff?k7efhh') format('woff'),
-		url('fonts/icomoon.svg?k7efhh#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?mpb3pc');
+    src:url('fonts/icomoon.eot?mpb3pc#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?mpb3pc') format('truetype'),
+      url('fonts/icomoon.woff?mpb3pc') format('woff'),
+      url('fonts/icomoon.svg?mpb3pc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-date:before {
+    content: "\e901";
+}
+.icon-tag:before {
+    content: "\e902";
+}
 .icon-a:before {
-	content: "\e600";
+    content: "\e600";
 }
 .icon-about-me:before {
-	content: "\e601";
+    content: "\e601";
 }
 .icon-azemoh:before {
-	content: "\e900";
+    content: "\e900";
 }
 .icon-close:before {
-	content: "\f00d";
+    content: "\f00d";
 }
 .icon-chevron-left:before {
-	content: "\f053";
+    content: "\f053";
 }
 .icon-chevron-right:before {
-	content: "\f054";
+    content: "\f054";
 }
 .icon-chevron-up:before {
-	content: "\f077";
+    content: "\f077";
 }
 .icon-chevron-down:before {
-	content: "\f078";
+    content: "\f078";
 }
 .icon-phone:before {
-	content: "\f095";
+    content: "\f095";
 }
 .icon-twitter:before {
-	content: "\f099";
+    content: "\f099";
 }
 .icon-facebook:before {
-	content: "\f09a";
+    content: "\f09a";
 }
 .icon-github:before {
-	content: "\f09b";
+    content: "\f09b";
 }
 .icon-google-plus:before {
-	content: "\f0d5";
+    content: "\f0d5";
 }
 .icon-email:before {
-	content: "\f0e0";
+    content: "\f0e0";
 }
 .icon-linkedin:before {
-	content: "\f0e1";
+    content: "\f0e1";
 }
 .icon-angle-left:before {
-	content: "\f104";
+    content: "\f104";
 }
 .icon-angle-right:before {
-	content: "\f105";
+    content: "\f105";
 }
 .icon-angle-up:before {
-	content: "\f106";
+    content: "\f106";
 }
 .icon-angle-down:before {
-	content: "\f107";
+    content: "\f107";
 }
 .icon-quote-left:before {
-	content: "\f10d";
+    content: "\f10d";
 }
 .icon-quote-right:before {
-	content: "\f10e";
+    content: "\f10e";
 }
 .icon-spinner:before {
-	content: "\f110";
+    content: "\f110";
 }
 .icon-terminal:before {
-	content: "\f120";
+    content: "\f120";
 }
 .icon-code:before {
-	content: "\f121";
+    content: "\f121";
 }
 .icon-apple:before {
-	content: "\f179";
+    content: "\f179";
 }
 .icon-windows:before {
-	content: "\f17a";
+    content: "\f17a";
 }
 .icon-android:before {
-	content: "\f17b";
-}
-.icon-paper-plane-o:before {
-	content: "\f1d9";
+    content: "\f17b";
 }
 .icon-at:before {
-	content: "\f1fa";
+    content: "\f1fa";
 }
 .icon-whatsapp:before {
-	content: "\f232";
+    content: "\f232";
 }
