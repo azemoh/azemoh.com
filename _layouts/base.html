@@ -4,11 +4,14 @@
   {% include head.html %}
 </head>
 <body>
- 
+
   {{ content }}
 
-<!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-  <script type="text/javascript" src="/assets/js/lib/jquery-1.11.3.js"></script>
+  {% if site.env == "dev" %}
+    <script type="text/javascript" src="/assets/js/lib/jquery-1.11.3.js"></script>
+  {% else %}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  {% endif %}
   <script type="text/javascript" src="/assets/js/script.min.js"></script>
 
 </body>
