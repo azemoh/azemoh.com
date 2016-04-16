@@ -20,24 +20,24 @@ $(function () {
 
   var date = new Date(),
     $nav = $('nav.top-nav'),
-    $navLinks = $('.nav-links li a'), // Get all li children
     linksHref = [];
 
+//  var $navLinks = $('.nav-links li a'); // Get all li children
 
-  for (var i = 0; i < $navLinks.length; i++) {
+/*  for (var i = 0; i < $navLinks.length; i++) {
     var link = $navLinks[i],
       href = $(link).attr('href');
     if (href != '/writing') {
       linksHref.push(href);
     }
-  }
+  } */
 
   /*--- Set Copyright year ---*/
   $('.yr-now').html(date.getFullYear().toString());
 
-  if ($('#home')) {
-    $('a[href*=#home]').addClass("active");
-  }
+//   if ($('#home')) {
+//     $('a[href*=#home]').addClass("active");
+//   }
 
   $(window).scroll(function () {
 
@@ -59,7 +59,7 @@ $(function () {
     }
 
     /*---- Active nav element ----*/
-    for (var i = 0; i < linksHref.length; i++) {
+/*    for (var i = 0; i < linksHref.length; i++) {
       var href = linksHref[i].replace('/', ''),
         secPosition = $(href).offset().top - 200, // Offset of the section from the top
         secHeight = $(href).outerHeight(); // height of hte section
@@ -70,7 +70,7 @@ $(function () {
         $('a[href*=' + href + ']').removeClass("active");
       }
 
-    }
+    } */
 
   });
 

@@ -19,23 +19,23 @@ title: Writing | Joshua Azemoh
     <article class="post-excerpt row-pad">
 
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <p class="post-excerpts--meta"><i class="icon-date"></i> <time>{{ post.date | date: '%B %d, %Y' }}</time></p>
+      <p class="post-excerpt--meta"><i class="icon-date"></i>&nbsp;<time>{{ post.date | date: '%B %d, %Y' }}</time></p>
       <div class="post-excerpts--intro">
-        {{ post.excerpt truncatewords: 50 | strip_html }}
-        <a href="{{ post.url }}" class="read-more">Read More >></a>
+        {{ post.excerpt truncatewords: 55 | strip_html }}
+        <a href="{{ post.url }}" class="read-more">keep reading ></a>
       </div>
 
     </article>
     {% endfor %}
   </div>
 
-  <div class="pagination">
+  <div class="paginator">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" >Previous</a>
+      <a href="{{ paginator.previous_page_path }}" ><i class="icon-angle-left"></i>&nbsp; Previous</a>
     {% endif %}
-     <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+     <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}">Next</a>
+      <a href="{{ paginator.next_page_path }}">Next &nbsp;<i class="icon-angle-right"></i></a>
     {% endif %}
   </div>
 

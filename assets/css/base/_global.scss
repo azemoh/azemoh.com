@@ -7,6 +7,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   background-color: #fff;
+  -webkit-tap-highlight-color: $highlight-color;
 }
 
 .alt-bg {
@@ -36,7 +37,6 @@ p {
   & + p { margin-top: 10px }
 }
 
-
 /* --- headings --- */
 
 h1,
@@ -53,6 +53,10 @@ h1,
 .huge {
   font-family: $huge-font;
   font-weight: 700;
+}
+
+h1, h2, h3 {
+  margin-bottom: .8rem;
 }
 
 strong, b {
@@ -158,10 +162,6 @@ img::selection {
 
 img::-moz-selection {
   background: transparent
-}
-
-body {
-  -webkit-tap-highlight-color: $highlight-color
 }
 
 img { max-width: 100% }

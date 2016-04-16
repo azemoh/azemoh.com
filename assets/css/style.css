@@ -192,7 +192,8 @@ body {
   color: #666;
   font-size: 100%;
   line-height: 1.5;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-tap-highlight-color: #FFF498; }
 
 .alt-bg {
   background-color: #F9FAFB; }
@@ -236,6 +237,9 @@ h1,
 .huge {
   font-family: "Raleway", "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 700; }
+
+h1, h2, h3 {
+  margin-bottom: .8rem; }
 
 strong, b {
   font-weight: 600; }
@@ -345,9 +349,6 @@ img::selection {
 
 img::-moz-selection {
   background: transparent; }
-
-body {
-  -webkit-tap-highlight-color: #FFF498; }
 
 img {
   max-width: 100%; }
@@ -597,7 +598,8 @@ img {
   text-align: center;
   color: #51C5FD;
   position: relative;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0; }
   .section-title.after {
     position: absolute;
     left: 50%;
@@ -984,6 +986,12 @@ hr {
   border-bottom: 2px solid #f6f6f6; }
   .post-excerpt:last-of-type {
     border-bottom: none; }
+  .post-excerpt--meta {
+    margin-bottom: 10px;
+    font-size: 0.9rem; }
+
+.paginator {
+  text-align: center; }
 
 /* Fields
  * for use with inputs and textereas */

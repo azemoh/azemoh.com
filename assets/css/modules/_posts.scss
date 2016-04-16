@@ -5,5 +5,14 @@
     &:last-of-type {
       border-bottom: none;
     }
+
+    &--meta {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
   }
+}
+
+.paginator {
+  text-align: center;
 }
