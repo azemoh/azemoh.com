@@ -3,7 +3,7 @@
   .social {
     width: 300px;
 
-    .social-links {
+    &-links {
       flex-direction: column;
       a {
         margin-bottom: $gutter / 1.5;

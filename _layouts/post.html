@@ -3,15 +3,15 @@ layout: default
 ---
 
 <div id="post" class="hero">
-  <div class="hero-overlay">
+  <div class="hero-overlay wrapper">
     <div class="hero-intro">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      <h1 class="post--title">{{ page.title }}</h1>
+      <p class="post--meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     </div>
   </div>
 </div>
 
-<div class="wrapper section">
+<div class="block-pad">
 
   <article class="post-content">
     {{ content }}

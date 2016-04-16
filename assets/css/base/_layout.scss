@@ -29,6 +29,9 @@
   padding: 50px 0;
 }
 
+.row-pad {
+  padding: 30px 0;
+}
 
 /**
  * Responsive flex layout
@@ -53,6 +56,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   &--grow {
     flex: 1;
   }
@@ -69,6 +73,10 @@
     @media #{$tablet} {
       @include no-flex();
     }
+  }
+
+  &--col_fixed-width {
+    width: 180px;
   }
 
   &--col-1 {
