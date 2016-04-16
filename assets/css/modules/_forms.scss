@@ -24,12 +24,11 @@
   min-width: 100px;
   margin-bottom: $gutter;
   border: 1px solid transparent;
-  color: #FFF;
+  color: #FFF !important;
   background: $accent-color;
   border-width: 0 0 .2rem;
   border-color: $dark-accent;
-  &:hover,
-  &:focus {
+  &:hover {
     margin-top: .1rem;
     border-bottom-width: .1rem;
     text-decoration: none;

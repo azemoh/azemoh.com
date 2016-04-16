@@ -5,9 +5,9 @@
   background-attachment: fixed;
   background-image: url(../img/bg.jpg);
   .hero-overlay {
-    padding: 8rem 0 6rem;
+    padding: 9rem 0 6rem;
     @media #{$smart-phone} {
-      padding: 7rem 0 5rem;
+      padding: 8rem 0 5rem;
     }
   }
 
@@ -36,29 +36,26 @@
       margin: 10px auto 0;
     }
     @media #{$tablet} {
-      h1 {
-        font-size: 3.8em;
-      }
       h2 {
         font-size: 1.65em;
       }
       p {
         max-width: 500px;
       }
-  }
-  @media #{$smart-phone} {
-    h1 {
-      font-size: 2.5em;
-      letter-spacing: -2.5px;
     }
-    h2 {
-      font-size: 1.1em;
+    @media #{$smart-phone} {
+      h1 {
+        // font-size: 2.8em;
+        letter-spacing: -2.5px;
+      }
+      h2 {
+        font-size: 1.2em;
+      }
+      p {
+        font-size: 1em;
+        max-width: 360px;
+      }
     }
-    p {
-      font-size: .8em;
-      max-width: 360px;
-    }
-  }
   }
   .godown {
     position: absolute;

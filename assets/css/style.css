@@ -239,7 +239,7 @@ h1,
   font-weight: 700; }
 
 h1, h2, h3 {
-  margin-bottom: .8rem; }
+  margin-bottom: 1rem; }
 
 strong, b {
   font-weight: 600; }
@@ -683,6 +683,11 @@ hr {
 .error {
   color: red; }
 
+.row-divider {
+  border-bottom: 2px solid #f6f6f6; }
+  .row-divider:last-child {
+    border-bottom: none; }
+
 .hero {
   position: relative;
   border-bottom: 1px solid #EEE;
@@ -690,10 +695,10 @@ hr {
   background-attachment: fixed;
   background-image: url(../img/bg.jpg); }
   .hero .hero-overlay {
-    padding: 8rem 0 6rem; }
+    padding: 9rem 0 6rem; }
     @media screen and (max-width: 480px) {
       .hero .hero-overlay {
-        padding: 7rem 0 5rem; } }
+        padding: 8rem 0 5rem; } }
   .hero .hero-intro {
     width: 100%;
     padding: 0 15px;
@@ -715,20 +720,17 @@ hr {
       max-width: 600px;
       margin: 10px auto 0; }
     @media screen and (max-width: 700px) {
-      .hero .hero-intro h1 {
-        font-size: 3.8em; }
       .hero .hero-intro h2 {
         font-size: 1.65em; }
       .hero .hero-intro p {
         max-width: 500px; } }
     @media screen and (max-width: 480px) {
       .hero .hero-intro h1 {
-        font-size: 2.5em;
         letter-spacing: -2.5px; }
       .hero .hero-intro h2 {
-        font-size: 1.1em; }
+        font-size: 1.2em; }
       .hero .hero-intro p {
-        font-size: .8em;
+        font-size: 1em;
         max-width: 360px; } }
   .hero .godown {
     position: absolute;
@@ -982,13 +984,25 @@ hr {
       -webkit-box-shadow: #51C5FD 0px 0px 1px;
               box-shadow: #51C5FD 0px 0px 1px; }
 
-.post-excerpt {
-  border-bottom: 2px solid #f6f6f6; }
-  .post-excerpt:last-of-type {
-    border-bottom: none; }
-  .post-excerpt--meta {
-    margin-bottom: 10px;
-    font-size: 0.9rem; }
+.post-excerpt--meta {
+  margin-bottom: 10px;
+  font-size: 0.9rem; }
+
+.post--body h1, .post--body h2 {
+  margin-top: 30px; }
+
+.post--body h3 {
+  margin-top: 20px; }
+
+.post--body p {
+  font-size: 1.05em;
+  margin-bottom: 1em; }
+
+.post--body blockquote {
+  border-left: 4px solid #51C5FD;
+  padding: 20px 40px;
+  margin: 30px 0;
+  background-color: #fafafa; }
 
 .paginator {
   text-align: center; }
@@ -1023,11 +1037,11 @@ hr {
   min-width: 100px;
   margin-bottom: 16px;
   border: 1px solid transparent;
-  color: #FFF;
+  color: #FFF !important;
   background: #51C5FD;
   border-width: 0 0 .2rem;
   border-color: #039ce5; }
-  .button:hover, .button:focus {
+  .button:hover {
     margin-top: .1rem;
     border-bottom-width: .1rem;
     text-decoration: none; }

@@ -105,3 +105,11 @@ hr {
 .error {
 	color: red;
 }
+
+.row-divider {
+  border-bottom: 2px solid #f6f6f6;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

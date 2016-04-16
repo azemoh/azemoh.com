@@ -6,7 +6,7 @@
 
     <div class="post-excerpts">
       {% for post in site.posts limit:2 %}
-      <article class="post-excerpt row-pad">
+      <article class="post-excerpt row-pad row-divider">
 
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p class="post-excerpt--meta"><i class="icon-date"></i>&nbsp;<time>{{ post.date | date: '%B %d, %Y' }}</time></p>
@@ -17,9 +17,11 @@
 
       </article>
       {% endfor %}
-    </div>
 
-    <a href="/writing/">More Articles</a>
+      <article class="post-excerpt row-pad row-divider">
+          <a href="/writing/">Read more posts</a>.
+      </article>
+    </div>
 
   </div>
 </section>
