@@ -3,13 +3,14 @@
   border-bottom: 1px solid #EEE;
   background: #F9FAFC;
   background-attachment: fixed;
+  background-image: url(../img/bg.jpg);
   .hero-overlay {
-    padding: 8rem 0 8rem;
+    padding: 8rem 0 6rem;
     @media #{$smart-phone} {
-      padding: 7rem 0 7rem;
+      padding: 7rem 0 5rem;
     }
   }
-  
+
   .hero-intro {
     width: 100%;
     padding: 0 15px;

@@ -29,7 +29,6 @@ paginate_path: "/writing/page:num/"
 author: Joshua Azemoh
 description: "Joshua Azemoh's personal website"
 
-excerpt_separator: <!--more-->
 
 # Site Variables
 

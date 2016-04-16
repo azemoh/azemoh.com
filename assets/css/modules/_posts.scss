@@ -1,0 +1,9 @@
+.post {
+  &-excerpt {
+    border-bottom: 2px solid #f6f6f6;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}

@@ -12,34 +12,21 @@ title: Writing | Joshua Azemoh
   </div>
 </div>
 
-<main class="wrapper">
+<main class="wrapper block-pad">
 
-  <div class="">
-
+  <div class="post-excerpts">
     {% for post in paginator.posts %}
+    <article class="post-excerpt row-pad">
 
-    <article class="article">
-
-      <div class="meta">
-        <time>{{ post.date | date_to_string }}</time>
-      </div>
-
-      <h2>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
-
-      <div class="article-text">
-        {{ post.excerpt }}
-      </div>
-
-      <div class="read-more-wrap">
-        <a href="{{ post.url }}" class="read-more">Read More</a>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="post-excerpts--meta"><i class="icon-date"></i> <time>{{ post.date | date: '%B %d, %Y' }}</time></p>
+      <div class="post-excerpts--intro">
+        {{ post.excerpt truncatewords: 50 | strip_html }}
+        <a href="{{ post.url }}" class="read-more">Read More >></a>
       </div>
 
     </article>
-
     {% endfor %}
-
   </div>
 
   <div class="pagination">
