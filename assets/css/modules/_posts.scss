@@ -12,15 +12,27 @@
     h3 { margin-top: 20px; }
     p {
       font-size: 1.05em;
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
     }
+  }
 
-    blockquote {
-      border-left: 4px solid $accent-color;
-      padding: 15px 40px;
-      margin: 30px 0;
-      background-color: $bg-color;
-    }
+  blockquote, pre {
+    border-left: 4px solid $accent-color;
+    background-color: $bg-color;
+    padding: $gutter;
+    margin: 30px 0;
+  }
+
+  blockquote {
+    padding-left: 40px;
+  }
+
+  pre {
+    line-height: 1.3;
+  }
+
+  .preface {
+    font-size: 1em;
   }
 }
 
