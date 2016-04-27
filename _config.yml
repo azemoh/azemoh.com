@@ -42,10 +42,10 @@ description: "Joshua Azemoh's personal website"
 
 ## Menu
 home_menu:
-- {name: "Home", url: "#home" }
-- {name: "About Me", url: "#about" }
+- {name: "Home", url: "/#home" }
+- {name: "About Me", url: "/#about" }
 - {name: "Writing", url: "/writing"}
-- {name: "Get In Touch", url: "#contact" }
+- {name: "Get In Touch", url: "/#contact" }
 
 ## Social links
 socialLinks:
