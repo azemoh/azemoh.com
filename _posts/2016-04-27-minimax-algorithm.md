@@ -26,7 +26,7 @@ The Minimax Algorithm generates every possible move by means of [recursion](http
 Let's walk through the implementation. We define Minimax as a function that receives two arguments: `dept` and `player`. We use the `dept` parameter to determine how many moves ahead the computer should simulate, and the `player`, represented as `"X"` or `"O"` to keep track of the current player.
 
 
-```JavaScript
+```javascript
 function miniMax(dept, player) {
   var bestMove = -1;
   var bestScore = (player === "O") ? -Infinity : Infinity;
@@ -39,7 +39,7 @@ To begin, a `bestScore` variable is initialized to negative `Infinity` if the cu
 The Minimax algorithm is a recursive algorithm so we need a base case that returns an actual value to prevent further calls to itself.
 
 
-```JavaScript
+```javascript
 function miniMax(dept, player) {
   var bestMove = -1;
   var bestScore = (player === "O") ? -Infinity : Infinity;
@@ -56,7 +56,7 @@ The function `returns` the `bestScore` and `bestMove` when the game is over, or 
 
 Next we call a function that returns an array of possible/un-played moves, than we use a for loop to iterate over each move and place the current player's piece on the board.
 
-```JavaScript
+```javascript
 function miniMax(dept, player) {
   ...
   var validMoves = possibleMoves();
@@ -70,7 +70,7 @@ function miniMax(dept, player) {
 
 At this point, we check to see who the current `player` is and call the `miniMax` function with the opposing player's piece. We also decrease the `dept` variable by one.
 
-```JavaScript
+```javascript
 function miniMax(dept, player) {
   ...
   // Iterate over the possible moves and try each.
@@ -90,7 +90,7 @@ function miniMax(dept, player) {
 
 The score result for the recursive call is then compared with the current `bestScore`. Keeping with the idea of maximizing the player's chances and minimizing the opponent's chances, If it's the maximizing player's turn, we set `bestScore` to the score result, and `bestMove` to the current move, if `bestScore` is less than the score result. And if it's the minimizing player's turn and the `bestScore` is greater than the score result, we set `bestScore` to the score result, and `bestMove` to the current move.
 
-```JavaScript
+```javascript
 function miniMax(dept, player) {
   ...
     if (player === "O") { // maximizing player's turn
@@ -114,7 +114,7 @@ function miniMax(dept, player) {
 
 Finally we undo the current move so we can try other moves then `return` `bestScore` and `bestMove`.
 
-```JavaScript
+```javascript
 function miniMax(dept, player) {
   ...
   // Iterate over the possible moves and try each.
@@ -129,7 +129,7 @@ function miniMax(dept, player) {
 ```
 Putting it all together:
 
-```JavaScript
+```javascript
 /**
  * Determine the best move for Computer player.
  * @param {Number} dept - Dept of game tree
