@@ -181,4 +181,4 @@ The `scoreBoard()` function iterate through an array of predefined win combinati
 ### Improving Efficiency
 Despite Tic-tac-toe's simplicity, it has about [362,880](https://en.wikipedia.org/wiki/Tic-tac-toe#Combinatorics) (9! Factorial) possible moves, imagine that number for a game like Chess. To improve the Minimax Algorithm's efficiency, [Alpha-beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) is used. Alpha-beta pruning is a search algorithm that reduces the amount of moves the Minimax Algorithm generates, by ignoring moves that will not influence the final decision. See the [implementation](https://github.com/azemoh/tic-tac-toe/blob/gh-pages/tictactoe.js#L208).
 
-I hope this has been helpful. Don't forget to [play](http://azemoh.github.io/tic-tac-toe/) the game and checkout the code on [Github](https://github.com/azemoh/tic-tac-toe).
+I hope this has been helpful, please leave comments and suggestions below. Don't forget to [play](http://azemoh.github.io/tic-tac-toe/) the game and checkout the code on [Github](https://github.com/azemoh/tic-tac-toe).

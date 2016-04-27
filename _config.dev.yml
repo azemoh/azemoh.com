@@ -4,6 +4,9 @@ email: joshazemoh@gmail.com
 tagline: Programmer · Developer · Dreamer
 motor: Think · Learn · Create
 markdown: kramdown
+
+disqus_name: azemoh
+
 baseurl: ""
 
 gems: [
