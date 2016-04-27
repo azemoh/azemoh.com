@@ -1,14 +1,17 @@
 @import "lib/bourbon/bourbon";
 
 @import "base/normalize";
+@import "base/syntax";
 @import "base/variables";
 @import "base/global";
 @import "base/layout";
 @import "base/font-icon";
 
 @import "modules/common";
+@import "modules/header";
 @import "modules/goto";
 @import "modules/footer";
+@import "modules/posts";
 @import "modules/forms";
 
 @import "pages/home";

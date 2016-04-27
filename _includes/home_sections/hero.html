@@ -1,29 +1,6 @@
-<header id="home" class="alt-bg">
-  <nav class="top-nav">
-    <div class="wrapper">
-
-    <a class="icon-azemoh brand" href="/">
-    </a>
-    <a href="/">Azemoh</a>
-    <span class="motor">{{ site.motor }}</span>
-
-    <label for="toggle" class="hambuger">
-      <span></span><span></span><span></span>
-    </label>
-
-    <input id="toggle" type="checkbox">
-
-    <ul class="nav-links pull-right">
-      {% for menu in site.home_menu %}
-        <li><a href="{{ menu.url }}">{{ menu.name }}</a></li>
-      {% endfor %}
-    </ul>
-
-    </div>
-  </nav>
-
-  <div class="home-overlay">
-    <div class="az-intro">
+<div id="home" class="hero">
+  <div class="hero--overlay wrapper">
+    <div class="hero-intro">
       <h1 class="huge">{{ site.title }}<span class="blinking-cursor"> |</span></h1>
       <h2 class="tagline">{{ site.tagline }}</h2>
       <p class="lead">Software / Web Developer.</p>
@@ -35,5 +12,4 @@
       <span class="icon-angle-down"></span>
     {% endfor %}</span>
   </a>
-
-</header>
+</div>

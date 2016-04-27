@@ -2,19 +2,19 @@
 layout: default
 ---
 
-<div class="wrapper">
-
-  <div class="post">
-
-    <header class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    </header>
-
-    <article class="post-content">
-      {{ content }}
-    </article>
-
+<div id="post" class="hero">
+  <div class="hero-overlay wrapper">
+    <div class="hero-intro">
+      <h1 class="post--title">{{ page.title }}</h1>
+      <p class="post--meta"><i class="icon-date"></i> &nbsp;<date>{{ page.date | date: "%b %-d, %Y" }}</date>{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </div>
   </div>
+</div>
+
+<div class="block-pad wrapper">
+
+  <article class="post--body post">
+    {{ content }}
+  </article>
 
 </div>

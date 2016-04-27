@@ -1,5 +1,5 @@
 .hambuger {
-  height: 36px;
+  height: 40px;
   display: none;
   padding: 9px;
   float: right;
@@ -8,9 +8,9 @@
   background-color: transparent;
   justify-content: space-between;
   span {
-    width: 25px;
+    width: 31px;
     display: block;
-    border-top: 3px solid $text-color;
+    border-top: 4px solid $text-color;
   }
 }
 
@@ -19,6 +19,7 @@
   color: $accent-color;
   position: relative;
   font-weight: 400;
+  margin: 0;
   &.after {
     position: absolute;
     left: 50%;
@@ -103,4 +104,12 @@ hr {
 
 .error {
 	color: red;
+}
+
+.row-divider {
+  border-bottom: 2px solid #f6f6f6;
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
