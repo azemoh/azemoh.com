@@ -5,6 +5,11 @@ tagline: Programmer · Developer · Dreamer
 motor: Think · Learn · Create
 markdown: redcarpet
 baseurl: ""
+
+gems: [
+  jekyll-paginate
+]
+
 exclude: [
   .git,
   .gitignore,
