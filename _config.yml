@@ -38,7 +38,7 @@ paginate_path: "/writing/page:num/"
 
 # SEO
 author: Joshua Azemoh
-description: "Joshua Azemoh's personal website"
+description: "Joshua Azemoh's personal website and technical blog"
 
 
 # Site Variables
