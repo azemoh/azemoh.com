@@ -1327,6 +1327,31 @@ hr {
     border-bottom-width: .1rem;
     text-decoration: none; }
 
+.btn {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid #51C5FD;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+  .btn:last-of-type {
+    margin-right: 0; }
+  .btn--clear {
+    color: #51C5FD; }
+    .btn--clear:hover {
+      color: #039ce5; }
+  .btn--solid {
+    background-color: #51C5FD;
+    color: #fff; }
+    .btn--solid:hover {
+      color: #fff;
+      background-color: #039ce5; }
+  .btn:hover {
+    border-color: #039ce5;
+    text-decoration: none; }
+  .btn [class^="icon-"], .btn [class*=" icon-"] {
+    margin-right: 5px;
+    line-height: 1.5; }
+
 #home.hero {
   background-image: url(../img/bg.jpg); }
   #home.hero .hero--overlay {

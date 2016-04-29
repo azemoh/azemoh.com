@@ -18,6 +18,11 @@ layout: default
     {{ content }}
   </article>
 
+  <div class="social-share row-pad">
+    <h3>Share this article.</h3>
+    {% include social-share.html %}
+  </div>
+
   {% if site.env != "dev" %}
     {% include disqus.html %}
   {% endif %}

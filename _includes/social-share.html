@@ -1,0 +1,11 @@
+<a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl }}"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"
+    class="btn btn--clear"><i class="icon-facebook"></i>Share</a>
+<!-- Twitter -->
+<a href="https://twitter.com/share?text={% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}&amp;url={{ page.url | prepend: site.baseurl }}"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"
+    class="btn btn--clear"><i class="icon-twitter"></i>Tweet</a>
+<!-- Google Plus -->
+<a href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl }}"
+    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"
+    class="btn btn--clear"><i class="icon-google-plus"></i>Share</a>

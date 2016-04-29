@@ -34,3 +34,44 @@
     text-decoration: none;
   }
 }
+
+.btn {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid $accent-color;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  // border-radius: 5px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &--clear {
+    color: $accent-color;
+
+    &:hover {
+      color: $dark-accent;
+    }
+  }
+
+  &--solid {
+    background-color: $accent-color;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: $dark-accent;
+    }
+  }
+
+  &:hover {
+    border-color: $dark-accent;
+    text-decoration: none;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    margin-right: 5px;
+    line-height: 1.5;
+  }
+}
