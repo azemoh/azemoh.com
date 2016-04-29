@@ -2,6 +2,9 @@
   background-color: #f4f4f4;
   .social {
     width: 300px;
+    @media #{$tablet} {
+      width: auto;
+    }
 
     &-links {
       flex-direction: column;
@@ -20,13 +23,15 @@
       border-radius: 50%;
       box-shadow: 0 0 5px #ddd;
     }
+
+
   }
   .contact-form {
     .field {
       padding: .8em 1.1em;
       background-color: #fff;
     }
-    
+
     .btn {
       padding: .8rem 1.1em .6rem;
     }
