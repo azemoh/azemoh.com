@@ -1310,23 +1310,6 @@ hr {
     -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 5px rgba(81, 197, 253, 0.6);
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 5px rgba(81, 197, 253, 0.6); }
 
-.button {
-  padding: .5rem .7rem .4rem;
-  font-weight: 700;
-  -webkit-border-radius: .5rem;
-          border-radius: .5rem;
-  min-width: 100px;
-  margin-bottom: 16px;
-  border: 1px solid transparent;
-  color: #FFF !important;
-  background: #51C5FD;
-  border-width: 0 0 .2rem;
-  border-color: #039ce5; }
-  .button:hover {
-    margin-top: .1rem;
-    border-bottom-width: .1rem;
-    text-decoration: none; }
-
 .btn {
   display: inline-block;
   padding: 6px 18px;
@@ -1345,6 +1328,18 @@ hr {
     .btn--solid:hover {
       color: #fff;
       background-color: #039ce5; }
+  .btn--3d {
+    border: 1px solid transparent;
+    color: #FFF !important;
+    background: #51C5FD;
+    border-width: 0 0 .2rem;
+    border-color: #039ce5;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+    .btn--3d:hover {
+      margin-top: .1rem;
+      border-bottom-width: .1rem;
+      text-decoration: none; }
   .btn:hover {
     border-color: #039ce5;
     text-decoration: none; }
@@ -1434,7 +1429,7 @@ hr {
   #contact .contact-form .field {
     padding: .8em 1.1em;
     background-color: #fff; }
-  #contact .contact-form .button {
+  #contact .contact-form .btn {
     padding: .8rem 1.1em .6rem; }
   #contact .contact-form .flex-actions {
     display: -webkit-box;
@@ -1451,7 +1446,7 @@ hr {
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
                 flex-direction: column; }
-        #contact .contact-form .flex-actions .button {
+        #contact .contact-form .flex-actions .btn {
           width: 100%;
           margin-left: 0;
           margin-right: 0; } }

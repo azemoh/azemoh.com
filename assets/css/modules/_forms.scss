@@ -17,31 +17,12 @@
   }
 }
 
-.button {
-  padding: .5rem .7rem .4rem;
-  font-weight: 700;
-  border-radius: .5rem;
-  min-width: 100px;
-  margin-bottom: $gutter;
-  border: 1px solid transparent;
-  color: #FFF !important;
-  background: $accent-color;
-  border-width: 0 0 .2rem;
-  border-color: $dark-accent;
-  &:hover {
-    margin-top: .1rem;
-    border-bottom-width: .1rem;
-    text-decoration: none;
-  }
-}
-
 .btn {
   display: inline-block;
   padding: 6px 18px;
   border: 1px solid $accent-color;
   margin-right: 10px;
   margin-bottom: 10px;
-  // border-radius: 5px;
 
   &:last-of-type {
     margin-right: 0;
@@ -62,6 +43,20 @@
     &:hover {
       color: #fff;
       background-color: $dark-accent;
+    }
+  }
+
+  &--3d {
+    border: 1px solid transparent;
+    color: #FFF !important;
+    background: $accent-color;
+    border-width: 0 0 .2rem;
+    border-color: $dark-accent;
+    border-radius: 4px;
+    &:hover {
+      margin-top: .1rem;
+      border-bottom-width: .1rem;
+      text-decoration: none;
     }
   }
 

@@ -26,9 +26,11 @@
       padding: .8em 1.1em;
       background-color: #fff;
     }
-    .button {
+    
+    .btn {
       padding: .8rem 1.1em .6rem;
     }
+
     .flex-actions {
       display: flex;
       .button {
@@ -37,7 +39,7 @@
       @media #{$small-device} {
         width: 100%;
         flex-direction: column;
-        .button {
+        .btn {
           width: 100%;
           margin-left: 0;
           margin-right: 0;
