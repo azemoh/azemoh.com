@@ -67,6 +67,11 @@ strong, b {
   font-size: 4.8em;
   letter-spacing: -4px;
   line-height: 1.08;
+
+  @media #{$tablet} {
+    font-size: 4rem;
+  }
+
   @media #{$smart-phone} {
     font-size: 3rem;
   }

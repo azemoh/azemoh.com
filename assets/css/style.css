@@ -517,6 +517,9 @@ strong, b {
   font-size: 4.8em;
   letter-spacing: -4px;
   line-height: 1.08; }
+  @media screen and (max-width: 700px) {
+    .huge {
+      font-size: 4rem; } }
   @media screen and (max-width: 480px) {
     .huge {
       font-size: 3rem; } }
@@ -957,6 +960,19 @@ hr {
   .row-divider:last-child {
     border-bottom: none; }
 
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+
 .hero {
   position: relative;
   border-bottom: 1px solid #EEE;
@@ -989,15 +1005,13 @@ hr {
       max-width: 600px;
       margin: 10px auto 0; }
     @media screen and (max-width: 700px) {
-      .hero .hero-intro h2 {
-        font-size: 1.65em; }
       .hero .hero-intro p {
         max-width: 500px; } }
     @media screen and (max-width: 480px) {
       .hero .hero-intro h1 {
         letter-spacing: -2.5px; }
       .hero .hero-intro h2 {
-        font-size: 1.2em; }
+        font-size: 1.5em; }
       .hero .hero-intro p {
         font-size: 1em;
         max-width: 360px; } }
