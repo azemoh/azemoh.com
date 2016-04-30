@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Movie Reviewer: Learn-Verified Sinatra Project"
-date:   2016-04-30 15:00:00
+date:   2016-04-30 15:00:00 +0100
 ---
 
 This post is about "Movie Reviewer" a Web application I built for my [Learn-Verified](https://learn.co){:target="_blank"} Sinatra assessment project. As the name implies, it is an application for Movie reviews where users can submit movies and write reviews about other movies. This is my first full-fledge application using the Sinatra web framework and I want to write about the process and a little bit about Sinatra. You can watch a [demo](#demo) of the app and see the code on [Github](http://github.com/azemoh/movie-review){:target="_blank"}.
