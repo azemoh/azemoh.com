@@ -76,7 +76,7 @@ configure do
 end
 ```
 
-Any file placed in the `public` folder is then served to the browser upon request. I used the [Foundation](http://foundation.zurb.com/sites.html) CSS library to give the views some basic styling, because I am fairly comfortable using the Bootstrap library I decided to try out Foundation with this project.
+Any file placed in the `public` folder is then served to the browser upon request. I used the [Foundation](http://foundation.zurb.com/sites.html){:target="_blank"} CSS library to give the views some basic styling, because I am fairly comfortable using the Bootstrap library I decided to try out Foundation with this project.
 
 ### Conclusion
 

@@ -1284,7 +1284,7 @@ hr {
 .post blockquote, .post pre {
   border-left: 4px solid #51C5FD;
   background-color: #fafafa;
-  padding: 16px;
+  padding: 16px 30px;
   margin: 30px 0; }
 
 .post blockquote {
