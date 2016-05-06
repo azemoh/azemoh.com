@@ -6,7 +6,7 @@ date:   2016-05-05 8:00:00 +0100
 
 As Web developers, we carry out some repetitious and mundane tasks during our design and development process, from transpiling your TypeScript files to JavaScript, to reloading your browser as you make changes to your code. These are of course necessary, but it would be nice to just focus on being productive and not deal with these little distractions. With [Gulp](http://gulpjs.com){:target="_blank"}, you can automate your development workflow and focus on delivering your best work.
 
-Gulp is a JavaScript task runner that allows you to define certain tasks for your project, which you can run at any time. Better still, you can define tasks that run once and watch for changes in your code, then execute other tasks. At this point your project becomes a living, breathing, autonomous beign. Well not exactly.
+Gulp is a JavaScript task runner that allows you to define certain tasks for your project, which you can run at any time. Better still, you can define tasks that run once and watch for changes in your code, then execute other tasks. At this point your project becomes a living, breathing, autonomous being. Well not exactly.
 
 Gulp has a great developer community behind it that maintains a huge [collection of plugins](http://gulpjs.com/plugins/){:target="_blank"} to achieve just about anything. Some simple tasks include:
 
