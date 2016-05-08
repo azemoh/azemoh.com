@@ -67,28 +67,31 @@ gulp.task('sass', function () {
   return gulp
     .src(config.cssDir + '*.scss')
     .pipe(sass({
-      includePaths: [config.cssDir] //,     outputStyle: 'compressed'
-    }))
+        includePaths: [config.cssDir] //,     outputStyle: 'compressed'
+      }))
     .on('error', sass.logError)
     .pipe(autoprefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
-      cascade: true
-    }))
+        cascade: true
+      }))
     .pipe(gulp.dest(config.publicDir + config.cssDir))
     .pipe(browserSync.reload({
-      stream: true
-    }))
+        stream: true
+      }))
     .pipe(gulp.dest(config.cssDir));
 });
 
 /**
  * minify javaScript files
  */
-gulp.task('minify:js', ['reload'], function () {
+gulp.task('minify:js', function () {
   return gulp.src(config.jsDir + 'script.js')
     .pipe(uglify('script.min.js', {
-      outSourceMap: true
-    }))
+        outSourceMap: true
+      }))
     .pipe(gulp.dest(config.publicDir + config.jsDir))
+    .pipe(browserSync.reload({
+        stream: true
+      }))
     .pipe(gulp.dest(config.jsDir));
 });
 

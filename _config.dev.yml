@@ -54,16 +54,8 @@ home_menu:
 ## Social links
 socialLinks:
 - {name: "github", title: "Github", url: "https://github.com/azemoh"}
-- {name: "linkedin", title: "Linkedin", url: "https://linkedin.com/in/azemoh"}
 - {name: "twitter", title: "Twitter", url: "http://twitter.com/josh_azemoh"}
-- {name: "google-plus", title: "Google+", url: "https://plus.google.com/+JoshuaAzemoh"}
-- {name: "email", title: "buzzme46@gmail.com", url: "mailto://joshazemoh@gmail.com"}
+- {name: "linkedin", title: "Linkedin", url: "https://linkedin.com/in/azemoh"}
+- {name: "email", title: "joshazemoh@gmail.com", url: "mailto://joshazemoh@gmail.com"}
+# - {name: "google-plus", title: "Google+", url: "https://plus.google.com/+JoshuaAzemoh"}
 #- {name: "facebook", title: "Facebook", url: "https://facebook.com/azemoh"}
-
-## Projects
-projects:
-- {title: "Sunshine", thumbnail: "sunshine.jpg"}
-- {title: "Azemoh.com", thumbnail: "azemoh.jpg"}
-- {title: "Flickster", thumbnail: "flickster.jpg"}
-- {title: "Chicken Arcade", thumbnail: "chicken_arcade.jpg"}
-- {title: "XYZ School Network", thumbnail: "xyz.jpg"}

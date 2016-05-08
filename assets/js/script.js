@@ -22,22 +22,8 @@ $(function () {
     $nav = $('nav.top-nav'),
     linksHref = [];
 
-//  var $navLinks = $('.nav-links li a'); // Get all li children
-
-/*  for (var i = 0; i < $navLinks.length; i++) {
-    var link = $navLinks[i],
-      href = $(link).attr('href');
-    if (href != '/writing') {
-      linksHref.push(href);
-    }
-  } */
-
   /*--- Set Copyright year ---*/
   $('.yr-now').html(date.getFullYear().toString());
-
-//   if ($('#home')) {
-//     $('a[href*=#home]').addClass("active");
-//   }
 
   $(window).scroll(function () {
 
@@ -57,20 +43,6 @@ $(function () {
     } else {
       $nav.removeClass("opaque");
     }
-
-    /*---- Active nav element ----*/
-/*    for (var i = 0; i < linksHref.length; i++) {
-      var href = linksHref[i].replace('/', ''),
-        secPosition = $(href).offset().top - 200, // Offset of the section from the top
-        secHeight = $(href).outerHeight(); // height of hte section
-
-      if (scrollTop >= secPosition && scrollTop < (secPosition + secHeight)) {
-        $('a[href*=' + href + ']').addClass("active");
-      } else {
-        $('a[href*=' + href + ']').removeClass("active");
-      }
-
-    } */
 
   });
 
