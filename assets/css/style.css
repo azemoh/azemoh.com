@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*	VARIABLES
+-----------------------------*/
+/*---- Colors---- */
+/*--- Typography ---*/
+/*---- Layout ----*/
+/*---- Break Points -----*/
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -448,12 +454,9 @@ code, pre {
   overflow-x: auto;
   word-wrap: normal; }
 
-/*	VARIABLES
------------------------------*/
-/*---- Colors---- */
-/*--- Typography ---*/
-/*---- Layout ----*/
-/*---- Break Points -----*/
+code.highlighter-rouge {
+  background: #f2f2f2; }
+
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 body {
@@ -1381,6 +1384,7 @@ hr {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
+                  -ms-grid-row-align: center;
               align-items: center;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
