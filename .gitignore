@@ -8,4 +8,4 @@ node_modules
 /_site/
 
 *.log
-/assets/css/lib/
+/assets/css/lib/bourbon
