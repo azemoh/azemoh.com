@@ -21,7 +21,7 @@ var config = {
  */
 gulp.task('jekyll:devbuild', function (done) {
   browserSync.notify(config.jekyllBuildMessage);
-  return cp.spawn('jekyll.bat', ['build', '--config', '_config.dev.yml'], {
+  return cp.spawn('jekyll', ['build', '--config', ['_config.yml', '_config.dev.yml']], {
       stdio: 'inherit'
     })
     .on('close', done);
