@@ -5,6 +5,15 @@
       margin-bottom: 10px;
       font-size: 0.9rem;
     }
+
+    h3 a {
+      color: inherit;
+      font-weight: 700;
+      &:hover, &:focus {
+        text-decoration: none;
+        color: $accent-color;
+      }
+    }
   }
 
   &--body {
