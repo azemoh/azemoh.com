@@ -5,20 +5,16 @@
 .social-icons {
   width: auto;
   a {
-    color: #999;
+    color: $text-color;
     @include size(30px);
     text-align: center;
     line-height: 30px;
-    border-radius: 3px;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid transparent;
     transition: all 0.2s ease-in-out;
     &:hover {
       color: $link-color;
-      transform: scale(1.1);
-      border: 1px solid $link-color;
-      box-shadow: $link-color 0px 0px 1px;
+      transform: scale(1.35);
     }
   }
 }

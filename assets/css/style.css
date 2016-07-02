@@ -186,7 +186,7 @@ th {
   padding: 0; }
 
 code, pre {
-  font-size: 0.9em; }
+  font-size: 0.95em; }
 
 .highlight {
   background: #ffffff; }
@@ -455,7 +455,8 @@ code, pre {
   word-wrap: normal; }
 
 code.highlighter-rouge {
-  background: #f2f2f2; }
+  background: #f5f5f5;
+  color: #50a14f; }
 
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
@@ -1247,35 +1248,29 @@ hr {
 .social-icons {
   width: auto; }
   .social-icons a {
-    color: #999;
+    color: #777;
     height: 30px;
     width: 30px;
     text-align: center;
     line-height: 30px;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid transparent;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
     .social-icons a:hover {
       color: #51C5FD;
-      -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-              transform: scale(1.1);
-      border: 1px solid #51C5FD;
-      -webkit-box-shadow: #51C5FD 0px 0px 1px;
-              box-shadow: #51C5FD 0px 0px 1px; }
+      -webkit-transform: scale(1.35);
+          -ms-transform: scale(1.35);
+              transform: scale(1.35); }
 
 .post-excerpt--meta {
   margin-bottom: 10px;
   font-size: 0.9rem; }
 
-.post-excerpt h3 a {
+.post-excerpt h2 a {
   color: inherit;
   font-weight: 700; }
-  .post-excerpt h3 a:hover, .post-excerpt h3 a:focus {
+  .post-excerpt h2 a:hover, .post-excerpt h2 a:focus {
     text-decoration: none;
     color: #51C5FD; }
 
