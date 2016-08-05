@@ -1,6 +1,3 @@
-/*global require*/
-"use strict";
-
 var cp = require('child_process');
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
