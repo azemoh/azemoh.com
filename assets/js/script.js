@@ -60,7 +60,7 @@ $(function () {
     e.preventDefault();
 
     $.ajax({
-      url: "//formspree.io/buzzme46@gmail.com",
+      url: "//formspree.io/joshazemoh@gmail.com",
       method: "POST",
       data: {
         name: $('#name').val(),
