@@ -1,4 +1,5 @@
 ---
+redirect_from: '/2016/05/05/speed-up-your-workflow-with-gulp.html'
 layout: post
 title:  "Speed Up your Workflow with Gulp"
 date:   2016-05-05 8:00:00 +0100

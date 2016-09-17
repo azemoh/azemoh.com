@@ -9,3 +9,7 @@ node_modules
 
 *.log
 /assets/css/lib/bourbon
+
+# Ruby
+Gemfile.lock
+/.bundle

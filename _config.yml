@@ -3,43 +3,45 @@ brand: Azemoh
 email: joshazemoh@gmail.com
 tagline: Thinker · Learner · Builder
 motor: Think · Learn · Create
+
 markdown: kramdown
 timezone: Africa/Lagos
+permalink: pretty
 
 disqus_name: azemoh
 
-baseurl: "http://azemoh.com"
+baseurl: http://azemoh.com
 
-gems: [
-  jekyll-paginate
-]
+gems:
+  - jekyll-paginate
+  - jekyll-redirect-from
 
-exclude: [
-  .git,
-  .gitignore,
-  CNAME,
-  assets/icomoon,
-  .sass-cache,
-  package.json,
-  gulpfile.js,
-  node_modules,
-  README.md,
-  style.html,
-  '**/*.map',
-  '**/*.scss',
-  '**/*.ai',
-  '**/*.psd',
-  '**/*.log'
-]
+exclude:
+  - .git
+  - .gitignore
+  - CNAME
+  - assets/icomoon
+  - .sass-cache
+  - package.json
+  - gulpfile.js
+  - node_modules
+  - README.md
+  - Gemfile*
+  - style.html
+  - '**/*.map'
+  - '**/*.scss'
+  - '**/*.ai'
+  - '**/*.psd'
+  - '**/*.log'
 
-env: "production"
+env: production
 
 paginate: 5
 paginate_path: "/writing/page:num/"
 
 # SEO
 author: Joshua Azemoh
-description: "Joshua Azemoh's personal website and technical blog"
+description: Joshua Azemoh's personal website and technical blog
 
 
 # Site Variables

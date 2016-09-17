@@ -1,4 +1,5 @@
 ---
+redirect_from: '/2016/04/27/minimax-algorithm.html'
 layout: post
 title:  "Tic-tac-toe strategy: Implementing the Minimax Algorithm"
 date:   2016-04-27 09:30:00

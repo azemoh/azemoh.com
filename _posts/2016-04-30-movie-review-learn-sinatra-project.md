@@ -1,4 +1,5 @@
 ---
+redirect_from: '/2016/04/30/movie-review-learn-sinatra-project.html'
 layout: post
 title:  "Movie Reviewer: Learn-Verified Sinatra Project"
 date:   2016-04-30 15:00:00 +0100

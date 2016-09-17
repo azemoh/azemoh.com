@@ -1,4 +1,5 @@
 ---
+redirect_from: "/2016/07/02/hoisting-in-javascript.html"
 layout: post
 title:  "Hoisting in JavaScript"
 date:   2016-07-02 00:20:00 +0100

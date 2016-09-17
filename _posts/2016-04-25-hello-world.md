@@ -1,4 +1,5 @@
 ---
+redirect_from: '/2016/04/25/hello-world.html'
 layout: post
 title:  "Hello World!"
 date:   2016-04-25 18:38:00

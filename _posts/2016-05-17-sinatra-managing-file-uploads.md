@@ -1,4 +1,5 @@
 ---
+redirect_from: "/2016/05/17/sinatra-managing-file-uploads.html"
 layout: post
 title:  "Sinatra: Managing File Uploads"
 date:   2016-05-17 20:00:00 +0100
