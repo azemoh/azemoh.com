@@ -10,8 +10,6 @@ permalink: pretty
 
 disqus_name: azemoh
 
-baseurl: http://azemoh.com
-
 gems:
   - jekyll-paginate
   - jekyll-redirect-from
