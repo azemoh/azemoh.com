@@ -55,7 +55,7 @@ A Movie Review domain requires three basic models: a User, the Movie and Reviews
 
 The [Learn-Verified](https://learn.co){:target="_blank"} program is heavily test-driving, and this has taught me the importance of testing and how to write tests. Testing helps you detect bugs early and well written test help you write better and extensible code. I used Rspec to for unit testing the models and Capybara for integration tests of the controllers and views.
 
-![Testing]({{'/assets/img/posts/movie-review-testing.png' | prepend: sute.baseurl }}){:class="center-block"}
+![Testing]({{'/assets/img/posts/movie-review-testing.png' | prepend: sute.base_url }}){:class="center-block"}
 
 ### Views and static files
 
