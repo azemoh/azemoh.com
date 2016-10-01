@@ -28,7 +28,7 @@ post '/upload' do
   if params[:image] && params[:image][:filename]
     filename = params[:image][:filename]
     file = params[:image][:tempfile]
-    path = "./public/uploads/#{@filename}"
+    path = "./public/uploads/#{filename}"
 
     # Write file to disk
     File.open(path, 'wb') do |f|
