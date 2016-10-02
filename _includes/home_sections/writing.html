@@ -5,7 +5,7 @@
     <div class="seperator"><span></span></div>
 
     <div class="post-excerpts">
-      {% for post in site.posts limit:2 %}
+      {% for post in site.posts limit:3 %}
       <article class="post-excerpt row-pad row-divider">
 
         <p class="post-excerpt--meta"><i class="icon-date"></i>&nbsp;<time>{{ post.date | date: '%B %d, %Y' }}</time></p>
