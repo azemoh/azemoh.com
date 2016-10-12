@@ -93,13 +93,6 @@ gulp.task('minify:js', function () {
 });
 
 /**
- * Reload browsersync without rebuilding
- */
-gulp.task('reload', function () {
-  browserSync.reload();
-});
-
-/**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
