@@ -18,7 +18,7 @@ var config = {
  */
 gulp.task('jekyll:devbuild', function (done) {
   browserSync.notify(config.jekyllBuildMessage);
-  return cp.spawn('jekyll', ['build', '--config', ['_config.yml', '_config.dev.yml']], {
+  return cp.spawn('bundle exec jekyll', ['build', '--config', ['_config.yml', '_config.dev.yml']], {
       stdio: 'inherit'
     })
     .on('close', done);
@@ -30,7 +30,7 @@ gulp.task('jekyll:devbuild', function (done) {
  * for production
  */
 gulp.task('jekyll:build', function (done) {
-  return cp.spawn('jekyll.bat', ['build'], {
+  return cp.spawn('bundle exec jekyll', ['build'], {
       stdio: 'inherit'
     })
     .on('close', done);

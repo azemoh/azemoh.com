@@ -12,7 +12,7 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ page.url | prepend: site.base_url }}">
-<meta property="og:image" content="{{ '/assets/img/avatar.jpg' | prepend: site.base_url }}">
+<meta property="og:image" content="{{ '/assets/img/avatar-bw.jpg' | prepend: site.base_url }}">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@josh_azemoh">
@@ -27,7 +27,7 @@
   "@context": "http://schema.org",
   "@type": "{% if page.layout == 'post' %}{{ 'Article' }}{% else %}{{ 'Person' }}{% endif %}",
   "url": "{{ page.url | prepend: site.base_url }}",
-  "image": "{{ '/assets/img/avatar.jpg' | prepend: site.base_url }}",
+  "image": "{{ '/assets/img/avatar-bw.jpg' | prepend: site.base_url }}",
   "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
 }
 </script>
