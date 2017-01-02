@@ -1,4 +1,4 @@
-var cp = require('child_process');
+var exec = require('child_process').exec;
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
@@ -18,7 +18,7 @@ var config = {
  */
 gulp.task('jekyll:devbuild', function (done) {
   browserSync.notify(config.jekyllBuildMessage);
-  return cp.spawn('bundle exec jekyll', ['build', '--config', ['_config.yml', '_config.dev.yml']], {
+  return exec('bundle exec jekyll build --config _config.yml _config.dev.yml', {
       stdio: 'inherit'
     })
     .on('close', done);
@@ -30,7 +30,7 @@ gulp.task('jekyll:devbuild', function (done) {
  * for production
  */
 gulp.task('jekyll:build', function (done) {
-  return cp.spawn('bundle exec jekyll', ['build'], {
+  return exec('bundle exec jekyll build', {
       stdio: 'inherit'
     })
     .on('close', done);
