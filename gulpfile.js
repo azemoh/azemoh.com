@@ -18,7 +18,7 @@ var config = {
  */
 gulp.task('jekyll:devbuild', function (done) {
   browserSync.notify(config.jekyllBuildMessage);
-  return exec('bundle exec jekyll build --config _config.yml _config.dev.yml', {
+  return exec('bundle exec jekyll build --config "_config.yml,_config.dev.yml"', {
       stdio: 'inherit'
     })
     .on('close', done);
