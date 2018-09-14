@@ -41,7 +41,7 @@ paginate_path: "/writing/page:num/"
 author: Joshua Azemoh
 description: Joshua Azemoh's personal website and technical blog
 
-base_url: http://azemoh.com
+base_url: https://azemoh.com
 
 # Site Variables
 
