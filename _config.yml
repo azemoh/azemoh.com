@@ -10,7 +10,7 @@ permalink: pretty
 
 disqus_name: azemoh
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-redirect-from
 
@@ -21,6 +21,7 @@ exclude:
   - assets/icomoon
   - .sass-cache
   - package.json
+  - package-lock.json
   - gulpfile.js
   - node_modules
   - README.md
