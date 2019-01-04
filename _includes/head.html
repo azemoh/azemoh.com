@@ -5,20 +5,20 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="author" content="{{ site.author }}">
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<link rel="shotrcut icon" href="{{ '/assets/favicon.png' | prepend: site.base_url }}" type="image/png">
+<link rel="shotrcut icon" href="/assets/favicon.png" type="image/png">
 <!-- Open Graph -->
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:type" content="{% if page.layout == 'post' %}{{ 'article' }}{% else %}{{ 'profile' }}{% endif %}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:url" content="{{ page.url | prepend: site.base_url }}">
-<meta property="og:image" content="{{ '/assets/img/avatar-bw.jpg' | prepend: site.base_url }}">
+<meta property="og:url" content="{{ page.url }}">
+<meta property="og:image" content="/assets/img/avatar-bw-2.jpg">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@josh_azemoh">
 
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.base_url }}">
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.base_url }}">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' }}">
 {% if site.env != "dev" %}
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet" type="text/css">
 <!-- Schema.org -->
@@ -27,7 +27,7 @@
   "@context": "http://schema.org",
   "@type": "{% if page.layout == 'post' %}{{ 'Article' }}{% else %}{{ 'Person' }}{% endif %}",
   "url": "{{ page.url | prepend: site.base_url }}",
-  "image": "{{ '/assets/img/avatar-bw.jpg' | prepend: site.base_url }}",
+  "image": "{{ '/assets/img/avatar-bw-2.jpg' | prepend: site.base_url }}",
   "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
 }
 </script>
