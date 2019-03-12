@@ -1,8 +1,9 @@
 ---
-redirect_from: '/2016/05/05/speed-up-your-workflow-with-gulp.html'
 layout: post
 title:  "Speed Up your Workflow with Gulp"
 date:   2016-05-05 8:00:00 +0100
+  - javascript
+  - gulp
 ---
 
 As Web developers, we carry out some repetitious and mundane tasks during our design and development process, from transpiling your TypeScript files to JavaScript, to reloading your browser as you make changes to your code. These are of course necessary, but it would be nice to just focus on being productive and not deal with these little distractions. With [Gulp](http://gulpjs.com){:target="_blank"}, you can automate your development workflow and focus on delivering your best work.

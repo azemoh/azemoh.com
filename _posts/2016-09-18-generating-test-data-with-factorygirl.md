@@ -2,7 +2,11 @@
 layout: post
 title:  "Generating Test Data With FactoryGirl"
 date:   2016-09-18 15:10:00 +0100
-tags: testing TDD
+tags:
+  - testing
+  - TDD
+  - ruby
+  - rspec 
 ---
 
 While testing Rails applications, you often need sample data to try out features in your app. The general flow is to create some data, perform operations on them, then make assertions about the data or expect some changes in your application.

@@ -2,7 +2,9 @@
 layout: post
 title:  Metaprogramming in Ruby
 date: 2017-01-02 04:30:00 +0100
-tags: ruby metaprogramming
+tags:
+  - ruby
+  - metaprogramming
 ---
 
 Ruby is a very expressive and dynamic language with lots of features that makes it a joy to work with. A lot of this is achieved by its great use of the [Metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming) concept. From its concise and highly readable syntax to a lot of syntactic sugar which almost feels like magic.

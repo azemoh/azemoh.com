@@ -2,7 +2,9 @@
 layout: post
 title:  "Setup Test Database for TravisCI"
 date:   2016-10-12 19:00:00 +0100
-tags: testing
+tags:
+  - testing
+  - TDD
 ---
 
 Most of the time, we need a database to test our applications. This can be tricky to setup in a Continuous Integration test environment, but [Travis CI](https://travis-ci.org) makes it pretty easy.

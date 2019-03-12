@@ -1,8 +1,9 @@
 ---
-redirect_from: '/2016/04/27/minimax-algorithm.html'
 layout: post
 title:  "Tic-tac-toe strategy: Implementing the Minimax Algorithm"
 date:   2016-04-27 09:30:00
+tags:
+ - javasctipt
 ---
 
 This is an update to [Ire Aderinokun's](http://twitter.com/ireaderinokun) [post](http://bitsofco.de/tic-tac-toe-revisited/) about a game of [Tic-tac-toe](http://ireade.github.io/tic-tac-toe-2/) she built. I made the Computer player unbeatable using the Minimax Algorithm and she encouraged me to write about it. I will focus on the Computer player's strategy so check out her initial [blog post](http://bitsofco.de/tic-tac-toe-revisited/) to see how she built the game. Play against my [AI player](http://azemoh.github.io/tic-tac-toe/) and checkout the [code](https://github.com/azemoh/tic-tac-toe).
