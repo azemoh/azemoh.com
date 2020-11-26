@@ -12,10 +12,10 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ page.url }}">
-<meta property="og:image" content="/assets/img/avatar-bw-2.jpg">
+<meta property="og:image" content="/assets/img/avatar.png">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:creator" content="@josh_azemoh">
+<meta name="twitter:creator" content="@joshazemoh">
 
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' }}">
@@ -27,7 +27,7 @@
   "@context": "http://schema.org",
   "@type": "{% if page.layout == 'post' %}{{ 'Article' }}{% else %}{{ 'Person' }}{% endif %}",
   "url": "{{ page.url | prepend: site.base_url }}",
-  "image": "{{ '/assets/img/avatar-bw-2.jpg' | prepend: site.base_url }}",
+  "image": "{{ '/assets/img/avatar.png' | prepend: site.base_url }}",
   "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
 }
 </script>
