@@ -17,5 +17,8 @@
     "gulp-autoprefixer": "^3.0.1",
     "gulp-sass": "^2.0.4",
     "gulp-uglifyjs": "^0.6.2"
+  },
+  "engines": {
+    "node": "4.9.1"
   }
 }
