@@ -1,7 +1,7 @@
 {
   "name": "azemoh",
   "description": "Joshua Azemoh's personal website",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "private": true,
   "main": "gulpfile.js",
   "scripts": {
@@ -9,16 +9,18 @@
     "build": "gulp build",
     "git-commit": "git add -A . && git commit -m \"site update\"",
     "git-push": "git push origin master",
-    "deploy": "npm run git-commit && npm run git-push"
+    "deploy": "npm run git-commit && npm run git-push",
+    "postinstall": "bundle exec bourbon install --path assets/css/lib"
   },
   "devDependencies": {
-    "browser-sync": "^2.9.3",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.1",
-    "gulp-sass": "^2.0.4",
-    "gulp-uglifyjs": "^0.6.2"
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "node-sass": "^7.0.1"
   },
-  "engines": {
-    "node": "4.9.1"
+  "dependencies": {
+    "bourbon": "^7.2.0"
   }
 }

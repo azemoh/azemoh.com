@@ -37,7 +37,7 @@
   animation: 1s blink step-end infinite;
 }
 
-@include keyframes(blink) {
+@keyframes blink {
   from,
   to {
     opacity: 0;
