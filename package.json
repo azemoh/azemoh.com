@@ -9,8 +9,7 @@
     "build": "gulp build",
     "git-commit": "git add -A . && git commit -m \"site update\"",
     "git-push": "git push origin master",
-    "deploy": "npm run git-commit && npm run git-push",
-    "postinstall": "bundle exec bourbon install --path assets/css/lib"
+    "deploy": "npm run git-commit && npm run git-push"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
